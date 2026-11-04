@@ -1,0 +1,67 @@
+{
+  "adn": {
+    "concept": "Anastomosis (Fusión orgánica de ramas de Conacaste: interconexión, cariño, raíces y comunidad)",
+    "mood": "Editorial poético, orgánico, sofisticado, cálido, táctil con texturas de papel y collage de alta sensibilidad",
+    "aesthetic": "Awwwards Editorial Elegance: asimétrico, tipografía monumental serif combinada con sans geométrico moderno, micro-interacciones suaves, acentos de color derivados de la naturaleza botánica"
+  },
+  "typography": {
+    "displaySerif": "Centaury / Cormorant Garamond / Instrument Serif",
+    "sansPrimary": "Outfit",
+    "editorialSerif": "Minion Pro / Newsreader / EB Garamond",
+    "hierarchy": {
+      "heroTitle": "text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-light tracking-tight leading-[0.9]",
+      "sectionTitle": "text-4xl sm:text-5xl md:text-6xl font-normal tracking-tight",
+      "projectTitle": "text-2xl sm:text-3xl md:text-4xl font-serif leading-tight",
+      "body": "text-base sm:text-lg leading-relaxed font-light",
+      "caption": "text-xs sm:text-sm tracking-widest uppercase font-medium"
+    }
+  },
+  "palette": {
+    "paper": {
+      "base": "#FAF7F2",
+      "light": "#FFFFFF",
+      "subtle": "#F3EFE8",
+      "cream": "#EDE7DC"
+    },
+    "ink": {
+      "primary": "#1A1715",
+      "secondary": "#4A4540",
+      "muted": "#7A736B",
+      "faint": "#A8A198"
+    },
+    "sections": {
+      "radix": {
+        "name": "Radix (Raíces)",
+        "wine": "#822B59",
+        "wineLight": "#F5E9EE",
+        "blush": "#E8B8C8",
+        "mood": "Profundo, pasional, literario"
+      },
+      "truncus": {
+        "name": "Truncus (Tronco)",
+        "moss": "#2B4A3E",
+        "mossLight": "#EAF2EE",
+        "terracotta": "#C86D48",
+        "mood": "Sólido, arquitectónico, enraizado"
+      },
+      "ramus": {
+        "name": "Ramus (Ramas)",
+        "ochre": "#A88828",
+        "ochreLight": "#FAF4E1",
+        "celestial": "#223547",
+        "mood": "Expansivo, astronómico, resonante"
+      }
+    },
+    "accents": {
+      "gold": "#C5A049",
+      "terracotta": "#C86D48",
+      "rose": "#E8B8C8",
+      "forest": "#243E34"
+    }
+  },
+  "texture": {
+    "grain": "Sutil ruido analógico/papel artesanal",
+    "borderWidth": "1px border-neutral-200/60",
+    "shadows": "Soft diffuse organic shadows (shadow-[0_20px_50px_rgba(26,23,21,0.06)])"
+  }
+}

@@ -1,0 +1,782 @@
+{
+  "author": {
+    "name": "Erin Figueroa",
+    "role": "Diseñadora Gráfica & Visual • Ilustradora • Directora de Arte",
+    "location": "El Salvador",
+    "institution": "Universidad Dr. José Matías Delgado",
+    "edition": "Primera edición • Diciembre 2026",
+    "title": "Anastomosis",
+    "subtitle": "U otra forma de decir te quiero",
+    "quote": {
+      "text": "«Mucha gente pequeña, en lugares pequeños, haciendo cosas pequeñas, puede cambiar el mundo»",
+      "author": "Eduardo Galeano"
+    },
+    "bio": [
+      "La primera vez que escuche de la Anastomosis fue en medio de una caminata por el parque, había un enorme árbol de Conacaste, “Mira sus ramas, se han fusionado y son una sola, mira lo que se quieren” Como es tan típico en mi, no pude evitar darle vueltas e intentar descubrir que significaban aquellas palabras y conectarlas con quien soy yo en estos momentos, espero no parecer egocéntrica o apofenica, pero luego de pensarlo varios días, me di cuenta de su naturaleza fáctica.",
+      "Le di muchas vueltas a la idea de que mi portafolio debia reprensetar quien era yo, que mostrarlo era mostrarme a mi. Y llego a parecerme que solo eran caminos vericuetos, pero al reflexionar, me di cuenta de algo que me parece hasta irrisorio por no haberlo notado antes, yo no estaría acá, si no fuera por lo que me han querido.",
+      "Porque pasa que cuando me veo a mi, me es inevitable ver: una promesa de amor, inmensas ganas de salir adelante, un “hola pajarito”, consejos de vida, una amante de las flores, a una estrella rutilante, a quien me enseño que hacer el bien siempre vale la pena, un choque électrico, a una pequeña nube, veo danzando entre el sol destellos dorados y negros, y una alegría inmensa que me recibe al llegar a casa, veo a mis compañeras de aventuras, risas , llantos, sueños y consejos que me han enseñado y hecho crecer.",
+      "Los veo a todos, los veo en momentos que ahora son recuerdos pero que dejaron huella, los veo en historias que se siguen escribiendo, los llevo en canciones, en la nostalgia del ayer y el anhelo del mañana, los veo al verme, porque aunque hoy soy yo quien esta frente a ustedes, es gracias a ellos, y a la anastomosis que hicieron en mi corazón, o para decirlo de una manera más sencilla, estoy hoy acá gracias a todos aquellos a lo largo de mi vida me han enseñado que significa “te quiero”.",
+      "Me llamo Erin, y aunque este portafolio tenga mi nombre, ninguna de estas páginas fue construida solamente por mí."
+    ],
+    "closingDedication": "Ingente plétora a todas las personas que me ayudaron a escribir esta historia, que ahora es nuestra."
+  },
+  "sections": [
+    {
+      "id": "radix",
+      "name": "RADIX",
+      "translation": "Raíces",
+      "concept": "Absorben agua y nutrientes del suelo y sujetan la planta con firmeza a la tierra.",
+      "discipline": "Mix Media • Collage • Ilustración",
+      "accentColor": "#822B59",
+      "accentBg": "#F7EBF0",
+      "description": "Desarrollo de portadas conmemorativas, cuentos ilustrados y postales conceptuales donde cada fragmento guarda una memoria viva."
+    },
+    {
+      "id": "truncus",
+      "name": "TRUNCUS",
+      "translation": "Tronco",
+      "concept": "Es el eje principal que mantiene el árbol erguido y soporta el peso de las ramas, hojas, flores y frutos.",
+      "discipline": "Branding • Identidad Visual • Diseño Corporativo",
+      "accentColor": "#2B4A3E",
+      "accentBg": "#EBF2EE",
+      "description": "Identidades sólidas e integrales: desde estudios de arquitectura sostenible y plataformas ambientales hasta iniciativas sociales y comunitarias."
+    },
+    {
+      "id": "ramus",
+      "name": "RAMUS",
+      "translation": "Ramas",
+      "concept": "Se extienden en distintas direcciones para formar una red que permite que todas las hojas capten la luz necesaria para realizar la fotosíntesis.",
+      "discipline": "Conceptualización • Investigación • Ilustración • Sistemas Visuales",
+      "accentColor": "#A88828",
+      "accentBg": "#FAF4E1",
+      "description": "Festivales de música, divulgación científica, vitrales de la singularidad, señalética espacial y campañas de activismo ecológico."
+    }
+  ],
+  "disciplines": [
+    {
+      "id": "mix-media",
+      "name": "Mix Media & Collage",
+      "count": 4
+    },
+    {
+      "id": "branding",
+      "name": "Branding & Identidad",
+      "count": 7
+    },
+    {
+      "id": "editorial",
+      "name": "Diseño Editorial",
+      "count": 6
+    },
+    {
+      "id": "ilustracion",
+      "name": "Ilustración & Personajes",
+      "count": 6
+    },
+    {
+      "id": "senaletica",
+      "name": "Señalética & Espacios",
+      "count": 1
+    },
+    {
+      "id": "infografia",
+      "name": "Infografía & Divulgación",
+      "count": 3
+    }
+  ],
+  "projects": [
+    {
+      "id": "01-el-coronel",
+      "number": "01",
+      "section": "radix",
+      "title": "El coronel no tiene quién le escriba",
+      "subtitle": "Un libro de Gabriel García Márquez",
+      "category": "Mix media e ilustración",
+      "year": "2026",
+      "featured": true,
+      "summary": "Rediseño conceptual de la portada para una edición conmemorativa especial utilizando el collage como lenguaje de resignificación.",
+      "text": [
+        "En un collage, ningún elemento está ahí por accidente. Cada fragmento llega con una historia propia y, al encontrarse con los demás, construye una imagen nueva. Esa misma lógica guió el desarrollo de las portadas: personajes, objetos, símbolos y momentos de las obras fueron investigados y reinterpretados para convertirse en pequeños guiños destinados a quienes ya conocen las historias y en puertas de entrada para quienes todavía no las han leído.",
+        "Este proyecto consiste en el rediseño conceptual de la portada del libro “El coronel no tiene quién le escriba”, obra de Gabriel García Márquez, planteada para ser la cara de una edición conmemorativa especial del libro. El proyecto utiliza el collage como lenguaje para construir una nueva lectura visual de las obras significando cada una de las partes del collage, y creando una relación directa entre estas, y la historia, volviendo a la portada, no solo un elemento visual, si no una ventana que permite un primer acercamiento con el contenido del libro, y invita a una primera conversación entre le lector y la obra."
+      ],
+      "tags": [
+        "Collage Digital",
+        "Diseño Editorial",
+        "Gabriel García Márquez",
+        "Edición Conmemorativa"
+      ],
+      "credits": null,
+      "pageStart": 8,
+      "pageEnd": 8,
+      "disciplines": [
+        "mix-media",
+        "editorial"
+      ],
+      "stampId": "coronel",
+      "images": {
+        "cover": "/images/project-01-cover.webp",
+        "gallery": [
+          "/images/project-01-cover.webp"
+        ]
+      },
+      "primaryCutout": "/images/cutouts/01-el-coronel-art.webp",
+      "secondaryCutouts": [
+        "/images/cutouts/01-el-coronel-detail-1.webp"
+      ]
+    },
+    {
+      "id": "02-almendra",
+      "number": "02",
+      "section": "radix",
+      "title": "Almendra el ave trovadora",
+      "subtitle": "Cuento infantil de sensibilización ambiental",
+      "category": "Mix media e ilustración",
+      "year": "2026",
+      "featured": true,
+      "summary": "Cuento infantil alrededor de una pequeña ave que utiliza su canto para visibilizar problemáticas de la naturaleza y los recursos.",
+      "text": [
+        "Para construir a Almendra fue necesario mirar más allá del personaje y preguntarse de dónde podía venir su manera de cantar, expresarse y relacionarse con el entorno. Su identidad comenzó a construirse a partir de la investigación y del encuentro entre referencias que, aunque pertenecen a mundos distintos, podían conectarse dentro de una misma historia.",
+        "Almendra, el ave trovadora es un cuento infantil construido alrededor de una pequeña ave que utiliza su canto para visibilizar problemáticas relacionadas con la naturaleza y los recursos naturales. El proyecto combinó investigación, escritura, ilustración y diseño editorial.",
+        "Para construir a Almendra fue necesario mirar más allá del personaje. Su apariencia toma referencias de la trova cubana, de elementos musicales y de características propias de las aves cantoras. Cada uno de estos elementos funciona como un pequeño hilo que conecta al personaje con una historia cultural y natural más amplia. La ilustración se convierte así en una forma de traducir investigación en un personaje capaz de comunicar y sensibilizar.",
+        "El universo de Almendra: En lugar de comunicar estos temas únicamente desde la información, el proyecto busca acercarlos a la infancia a través de un personaje, una historia y un universo visual que permitan descubrirlos desde la curiosidad y la sensibilidad. El proyecto integró investigación, escritura, construcción de personaje, ilustración y diseño editorial.",
+        "Cada referencia funciona como un pequeño hilo dentro del proyecto. La música conecta con el canto; el canto, con las aves; las aves, con la naturaleza; y la naturaleza, con las problemáticas ambientales que Almendra busca comunicar. La ilustración se convierte entonces en un punto de encuentro entre todos estos elementos y en una herramienta capaz de traducir la investigación en una narrativa visual accesible.",
+        "El resultado es un proyecto en el que contar una historia también se convierte en una forma de acercarse al entorno. Almendra canta para comunicar, pero también para generar curiosidad sobre aquello que muchas veces pasa desapercibido. A través de ella, el cuento propone que conocer la naturaleza puede ser el primer paso para observarla de otra manera, comprender lo que ocurre en ella y desarrollar una relación más consciente con aquello que nos rodea."
+      ],
+      "tags": [
+        "Cuento Infantil",
+        "Ilustración",
+        "Trova",
+        "Educación Ambiental",
+        "Diseño Editorial"
+      ],
+      "credits": null,
+      "pageStart": 9,
+      "pageEnd": 12,
+      "disciplines": [
+        "ilustracion",
+        "editorial",
+        "mix-media"
+      ],
+      "stampId": "almendra",
+      "images": {
+        "cover": "/images/project-02-cover.webp",
+        "gallery": [
+          "/images/project-02-cover.webp",
+          "/images/project-02-spread1.webp",
+          "/images/project-02-spread2.webp"
+        ]
+      },
+      "primaryCutout": "/images/cutouts/02-almendra-art.webp",
+      "secondaryCutouts": [
+        "/images/cutouts/02-almendra-detail-1.webp",
+        "/images/cutouts/02-almendra-detail-2.webp"
+      ]
+    },
+    {
+      "id": "03-la-contradictoria-levedad",
+      "number": "03",
+      "section": "radix",
+      "title": "La contradictoria levedad del ser",
+      "subtitle": "1983 • Serie de postales conceptuales",
+      "category": "Mix media y collage",
+      "year": "1983 / 2026",
+      "featured": false,
+      "summary": "Inspirado en La insoportable levedad del ser de Milan Kundera, explorando la contradicción humana y la imagen como espacio para formular preguntas.",
+      "text": [
+        "Este proyecto nace a partir de la lectura de La insoportable levedad del ser, de Milan Kundera, y de las reflexiones que plantea alrededor de la existencia, las contradicciones humanas y nuestra necesidad constante de encontrar significado. Más que trasladar literalmente el contenido del libro a imágenes, la intención fue tomar esa sensación de cuestionamiento como punto de partida para construir una serie de postales conceptuales.",
+        "Las composiciones fueron desarrolladas mediante collage digital, utilizando fotografías, texturas y objetos que, en principio, no necesariamente pertenecen a un mismo universo.",
+        "Cada postal funciona como un pequeño ejercicio de asociación. No existe necesariamente una única lectura ni todos los elementos están ahí para entregar un significado inmediato. La intención es generar una pausa: detenerse frente a la composición, recorrer sus detalles y preguntarse por qué esas imágenes aparecen juntas, qué relación podría existir entre ellas o qué significado construimos nosotros al observarlas.",
+        "El proyecto también parte de una inquietud personal por explorar el diseño desde un lugar más reflexivo. Fue una oportunidad para alejarme momentáneamente de la necesidad de comunicar una respuesta concreta y acercarme a la imagen como espacio para formular preguntas."
+      ],
+      "tags": [
+        "Collage Digital",
+        "Milan Kundera",
+        "Postales",
+        "Filosofía Visual"
+      ],
+      "credits": null,
+      "pageStart": 13,
+      "pageEnd": 14,
+      "disciplines": [
+        "mix-media",
+        "editorial"
+      ],
+      "stampId": "levedad",
+      "images": {
+        "cover": "/images/project-03-cover.webp",
+        "gallery": [
+          "/images/project-03-cover.webp",
+          "/images/project-03-spread.webp"
+        ]
+      },
+      "primaryCutout": "/images/cutouts/03-la-contradictoria-levedad-art.webp",
+      "secondaryCutouts": [
+        "/images/cutouts/03-la-contradictoria-levedad-detail-1.webp",
+        "/images/cutouts/03-la-contradictoria-levedad-detail-2.webp"
+      ]
+    },
+    {
+      "id": "04-las-medias-de-los-flamencos",
+      "number": "04",
+      "section": "radix",
+      "title": "Las medias de los flamencos",
+      "subtitle": "Un libro de Horacio Quiroga",
+      "category": "Mix media e ilustración",
+      "year": "2026",
+      "featured": false,
+      "summary": "Serie de ilustraciones para una nueva interpretación visual del cuento clásico de Horacio Quiroga para público infantil.",
+      "text": [
+        "Serie de ilustraciones para una nueva interpretación visual del cuento clásico de Horacio Quiroga. La propuesta busca acercar la historia a un público infantil mediante personajes y recursos gráficos pensados para resultar amables y accesibles.",
+        "Reinterpretar una historia también significa volver a preguntarse cómo queremos que alguien la encuentre. En este caso, la investigación y el análisis del cuento sirvieron como punto de partida para construir personajes capaces de conservar su esencia, pero trasladados a un lenguaje visual más cercano a los niños. Mediante el uso de texturas y colores, y la fusión de estos, se construyeron personajes con personalidad que buscan sumergir a los niños en la historia y permitirles imaginar conforme disfrutan del libro."
+      ],
+      "tags": [
+        "Horacio Quiroga",
+        "Ilustración Infantil",
+        "Texturas",
+        "Literatura"
+      ],
+      "credits": "Lic. Rodolfo Velado (Asesoramiento y guía en el proyecto)",
+      "pageStart": 15,
+      "pageEnd": 17,
+      "disciplines": [
+        "ilustracion",
+        "mix-media"
+      ],
+      "stampId": "flamencos",
+      "images": {
+        "cover": "/images/project-04-cover.webp",
+        "gallery": [
+          "/images/project-04-cover.webp",
+          "/images/project-04-detail.webp"
+        ]
+      },
+      "primaryCutout": "/images/cutouts/04-las-medias-de-los-flamencos-art.webp",
+      "secondaryCutouts": [
+        "/images/cutouts/04-las-medias-de-los-flamencos-detail-1.webp",
+        "/images/cutouts/04-las-medias-de-los-flamencos-detail-2.webp"
+      ]
+    },
+    {
+      "id": "05-domus",
+      "number": "05",
+      "section": "truncus",
+      "title": "DOMUS Arquitectura Sostenible",
+      "subtitle": "Arquitectura, es ser sostenible • 2025",
+      "category": "Branding e identidad de marca",
+      "year": "2025",
+      "featured": true,
+      "summary": "Estudio de arquitectura residencial desde una perspectiva integral de responsabilidad, diseño consciente y compromiso social.",
+      "text": [
+        "DOMUS es un estudio de arquitectura especializado en el diseño y desarrollo de proyectos residenciales concebidos desde una perspectiva integral. Su nombre, proveniente del latín, significa “hogar” o “casa”, un concepto que representa la esencia de la marca y su compromiso con la creación de espacios pensados para mejorar la calidad de vida de las personas. Aunque la vivienda constituye su principal línea de trabajo, la filosofía de DOMUS puede aplicarse a cualquier proyecto arquitectónico que comparta principios de responsabilidad, diseño consciente y compromiso social.",
+        "Para DOMUS, la arquitectura trasciende la construcción de espacios físicos. Cada proyecto nace con la intención de responder a necesidades reales, mejorar la calidad de vida de las personas y generar un impacto positivo en el entorno. Su propuesta de diseño lo lleva a cabo mediante una mística en la que las personas juegan un papel fundamental, y la arquitectura responsable es un medio, a través del diseño consciente, la sostenibilidad y el compromiso social, mediante el cual se construyen hogares que generan bienestar y fortalecen a las comunidades de El Salvador.",
+        "La marca tiene una estética limpia y cercana, buscando priorizar que se destaque la imagen como punto focal y centro de interés."
+      ],
+      "tags": [
+        "Branding",
+        "Identidad Corporativa",
+        "Arquitectura Sostenible",
+        "El Salvador"
+      ],
+      "credits": "Diseño de espacios: Kimberly Moreno",
+      "pageStart": 19,
+      "pageEnd": 21,
+      "disciplines": [
+        "branding"
+      ],
+      "stampId": "domus",
+      "images": {
+        "cover": "/images/project-05-cover.webp",
+        "gallery": [
+          "/images/project-05-cover.webp",
+          "/images/project-05-brand.webp"
+        ]
+      },
+      "primaryCutout": "/images/cutouts/05-domus-art.webp",
+      "secondaryCutouts": [
+        "/images/cutouts/05-domus-detail-1.webp"
+      ]
+    },
+    {
+      "id": "06-tour-verde-virtual",
+      "number": "06",
+      "section": "truncus",
+      "title": "Tour Verde Virtual",
+      "subtitle": "Plataforma que permite conocer las diversas áreas naturales protegidas del país",
+      "category": "Branding e Identidad Visual",
+      "year": "2026",
+      "featured": true,
+      "summary": "Proyecto para el Fondo de Inversión Ambiental de El Salvador (FIAES) con experiencia de realidad aumentada y diseño web.",
+      "text": [
+        "Tour Verde Virtual fue un proyecto desarrollado para el Fondo de Inversión Ambiental de El Salvador (FIAES). La iniciativa buscaba acercar a la población al conocimiento de las áreas naturales y áreas naturales protegidas del país mediante una experiencia digital, facilitando el acceso a información sobre estos territorios y generando nuevas formas de aproximarse a su riqueza natural.",
+        "Esto, con la intención de hacer notar a las personas que el conocer también es una forma de cuidar, pues nos permite valorar y actuar en consecuencia. El proyecto parte de la conexión entre información y territorio: cuando un lugar puede ser recorrido, comprendido y descubierto, también puede comenzar a construirse una relación distinta con él. La identidad y la plataforma digital se plantearon desde esta idea, utilizando el diseño como una herramienta para acercar el patrimonio natural de El Salvador a personas que quizá no tenían la posibilidad de conocer estos espacios de manera presencial.",
+        "La relevancia del proyecto se encuentra precisamente en hacer visible aquello que muchas veces permanece distante. Las áreas naturales no representan únicamente espacios geográficos: albergan ecosistemas, especies y recursos fundamentales para el equilibrio ambiental del país. Acercarlas a través de una plataforma digital permite ampliar su alcance y convertir el conocimiento en un primer punto de contacto para despertar curiosidad, reconocimiento y una mayor conciencia sobre la importancia de su conservación.",
+        "La experiencia digital no busca sustituir el contacto directo con la naturaleza, sino generar una conversación que permita que más personas puedan descubrir estos territorios, comprender su valor y reconocer que también forman parte de un patrimonio que necesita ser conocido para poder ser protegido.",
+        "Desde el diseño, el reto consistió en construir una identidad capaz de acompañar esta experiencia sin competir con su verdadero protagonista: el territorio. Se desarrollaron el logotipo y los elementos gráficos del proyecto buscando establecer un lenguaje visual vinculado con la naturaleza, la exploración y el descubrimiento de las áreas naturales de El Salvador. Estos recursos posteriormente se trasladaron al entorno digital para mantener una experiencia coherente entre la identidad del proyecto y la manera en que las personas navegaban por sus contenidos. Mi participación incluyó el desarrollo del logotipo, la creación de elementos gráficos y el diseño y adecuación de la experiencia web en Wix."
+      ],
+      "tags": [
+        "FIAES",
+        "Identidad Visual",
+        "Realidad Aumentada",
+        "Conservación",
+        "Diseño Web"
+      ],
+      "credits": "Fondo de Inversión Ambiental de El Salvador (FIAES)",
+      "pageStart": 22,
+      "pageEnd": 23,
+      "disciplines": [
+        "branding",
+        "editorial"
+      ],
+      "stampId": "tour",
+      "images": {
+        "cover": "/images/project-06-cover.webp",
+        "gallery": [
+          "/images/project-06-cover.webp",
+          "/images/project-06-ui.webp"
+        ]
+      },
+      "primaryCutout": "/images/cutouts/06-tour-verde-virtual-art.webp",
+      "secondaryCutouts": [
+        "/images/cutouts/06-tour-verde-virtual-detail-1.webp"
+      ]
+    },
+    {
+      "id": "07-prudencia-voces-ciudadanas",
+      "number": "07",
+      "section": "truncus",
+      "title": "Prudencia Voces Ciudadanas",
+      "subtitle": "Formando líderes y lideresas que transformen a sus comunidades",
+      "category": "Identidad de marca - Diseño Editorial - Collage",
+      "year": "2026",
+      "featured": true,
+      "summary": "Línea gráfica para formación comunitaria con Fundación Rafael Meza Ayau (PONGO) y PNUD, uniendo fotografía y elementos orgánicos.",
+      "text": [
+        "Una línea gráfica desarrollada para un proyecto de formación de líderes y lideresas comunitarios, trabajado junto a la Fundación Rafael Meza Ayau y su marca PONGO, una plataforma del sector social que busca facilitar recursos para personas interesadas dentro del rubro, el proyecto se llevó a cabo con apoyo de PNUD. El reto consistía en transformar contenidos de formación en una experiencia visual más cercana, clara y atractiva que facilitara la comprensión.",
+        "Aquí la conexión ocurre entre instituciones, conocimientos y personas. El proyecto debía articular dos lenguajes institucionales (el de PNUD y el de la Fundación) sin perder de vista a quienes recibirían los contenidos. La propuesta buscó convertir esa convergencia en una identidad capaz de acompañar el aprendizaje y hacerlo más accesible para los líderes y lideresas de las comunidades incorporando fotografía y elementos orgánicos en el lenguaje visual de las piezas."
+      ],
+      "tags": [
+        "Diseño Social",
+        "PNUD",
+        "Fundación Rafael Meza Ayau",
+        "Diseño Editorial",
+        "Collage"
+      ],
+      "credits": "Proyecto desarrollado para la Fundación Rafael Meza Ayau con apoyo de PNUD • Acompañamiento: Rodrigo Sibrián • Fotografía: Beatriz Mancía",
+      "pageStart": 24,
+      "pageEnd": 26,
+      "disciplines": [
+        "editorial",
+        "branding",
+        "mix-media"
+      ],
+      "stampId": "prudencia",
+      "images": {
+        "cover": "/images/project-07-cover.webp",
+        "gallery": [
+          "/images/project-07-cover.webp",
+          "/images/project-07-editorial.webp"
+        ]
+      },
+      "primaryCutout": "/images/cutouts/07-prudencia-voces-ciudadanas-art.webp",
+      "secondaryCutouts": [
+        "/images/cutouts/07-prudencia-voces-ciudadanas-detail-1.webp"
+      ]
+    },
+    {
+      "id": "08-gigi-car",
+      "number": "08",
+      "section": "truncus",
+      "title": "Gigi Car",
+      "subtitle": "Entiende mejor tu vehículo • Empoderamiento automotriz femenino",
+      "category": "Branding e identidad de marca",
+      "year": "2026",
+      "featured": false,
+      "summary": "Marca y app que reduce la inseguridad femenina en el ámbito automotriz, transformando el desconocimiento en autonomía.",
+      "text": [
+        "GIGI CAR es una marca que busca reducir la inseguridad que muchas mujeres experimentan en el ámbito automotriz. A través de un enfoque accesible y empático, se busca transformar el desconocimiento en autonomía, creando un espacio donde las usuarias se sientan seguras, comprendidas y capaces. La aplicación brinda diversas herramientas, cuenta con una IA que facilita la comprensión de procesos y la oportunidad de conectar con mecánicas certificadas. El objetivo principal del proyecto es educar a las mujeres (principalmente) sobre sus carros, y brindarles una plataforma que les ayude a comprender mejor el por qué de determinados problemas que puede dar el vehículo, maneras de resolverlos, presupuestos para reparación, números de emergencia y la posibilidad de contactar con mecánicos de confianza.",
+        "El proyecto comenzó con una conexión muy concreta, una conversación con mi mamá, pero rápidamente dejó de ser solamente nuestra. La investigación llevó la pregunta hacia otras mujeres y hacia cualquier persona que pudiera necesitar ese conocimiento. Por eso Gigi Car no se plantea únicamente como una aplicación sobre automóviles, sino como un puente entre una duda y la posibilidad de entenderla."
+      ],
+      "tags": [
+        "Branding",
+        "App Design",
+        "Empoderamiento",
+        "UX/UI"
+      ],
+      "credits": "Diseño desarrollado con el acompañamiento de: Lic. Sara Silva",
+      "pageStart": 27,
+      "pageEnd": 29,
+      "disciplines": [
+        "branding"
+      ],
+      "stampId": "gigicar",
+      "images": {
+        "cover": "/images/project-08-cover.webp",
+        "gallery": [
+          "/images/project-08-cover.webp",
+          "/images/project-08-app.webp"
+        ]
+      },
+      "primaryCutout": "/images/cutouts/08-gigi-car-art.webp",
+      "secondaryCutouts": [
+        "/images/cutouts/08-gigi-car-detail-1.webp"
+      ]
+    },
+    {
+      "id": "09-campamento-aventura",
+      "number": "09",
+      "section": "truncus",
+      "title": "El campamento Aventura FRMA",
+      "subtitle": "Promoción y piezas visuales para campamento infantil",
+      "category": "Branding y Diseño Corporativo",
+      "year": "2026",
+      "featured": false,
+      "summary": "Diseñar para niños mirando desde ellos: lenguaje dinámico y cercano que preserva la identidad institucional de la Fundación Rafael Meza Ayau.",
+      "text": [
+        "Diseñar para niños también implica aprender a mirar desde ellos. La propuesta parte del análisis de ese público y de la necesidad de encontrar un lenguaje visual que resulte cercano, dinámico y comprensible, manteniendo al mismo tiempo la relación con la identidad de la Fundación. Cada elemento responde así a una intención: atraer, comunicar y abrir la puerta a una experiencia.",
+        "Esta propuesta gráfica para una serie piezas destinadas a promover un campamento infantil. El proyecto debía comunicar aventura y entusiasmo sin perder de vista la identidad institucional de la Fundación Rafael Meza Ayau."
+      ],
+      "tags": [
+        "Branding Infantil",
+        "Fundación Rafael Meza Ayau",
+        "Diseño Corporativo",
+        "Comunicación"
+      ],
+      "credits": "Proyecto desarrollado para la Fundación Rafael Meza Ayau • Acompañamiento: Rodrigo Sibrián",
+      "pageStart": 30,
+      "pageEnd": 31,
+      "disciplines": [
+        "branding",
+        "ilustracion"
+      ],
+      "stampId": "campamento",
+      "images": {
+        "cover": "/images/project-09-cover.webp",
+        "gallery": [
+          "/images/project-09-cover.webp"
+        ]
+      },
+      "primaryCutout": "/images/cutouts/09-campamento-aventura-art.webp",
+      "secondaryCutouts": [
+        "/images/cutouts/09-campamento-aventura-detail-1.webp",
+        "/images/cutouts/09-campamento-aventura-detail-2.webp"
+      ]
+    },
+    {
+      "id": "10-proyecto-okapi",
+      "number": "10",
+      "section": "truncus",
+      "title": "Proyecto Okapi",
+      "subtitle": "Aprendamos juntos • Divulgación de lo insólito y cotidiano",
+      "category": "Branding y Diseño Corporativo",
+      "year": "2026",
+      "featured": false,
+      "summary": "Proyecto editorial y digital nacido del impulso de investigar lo extraño o aparentemente irrelevante para mirar de nuevo aquello que creíamos conocer.",
+      "text": [
+        "La curiosidad también puede ser una forma de conexión. Investigar algo pequeño, extraño o aparentemente irrelevante puede abrir una puerta hacia nuevas preguntas y transformar la manera en que observamos lo cotidiano. Proyecto Okapi nace precisamente de ese impulso: descubrir primero para después compartir, convirtiendo la información en una invitación a mirar de nuevo aquello que creíamos conocer.",
+        "Proyecto editorial y digital nacido de la curiosidad: un espacio para compartir información que muchas veces pasa desapercibida por ser extraña, inesperada o simplemente poco conocida. La propuesta culminó en una página de Instagram con una identidad propia con secciones como: Datos curiosos para divertirse, Palabras nuevas para ampliar vocabulario, e Historia y hechos para aprender cosas nuevas."
+      ],
+      "tags": [
+        "Proyecto Editorial",
+        "Social Media",
+        "Curiosidad",
+        "Instagram Identity"
+      ],
+      "credits": null,
+      "pageStart": 32,
+      "pageEnd": 34,
+      "disciplines": [
+        "editorial",
+        "infografia"
+      ],
+      "stampId": "okapi",
+      "images": {
+        "cover": "/images/project-10-cover.webp",
+        "gallery": [
+          "/images/project-10-cover.webp",
+          "/images/project-10-feed.webp"
+        ]
+      },
+      "primaryCutout": "/images/cutouts/10-proyecto-okapi-art.webp",
+      "secondaryCutouts": [
+        "/images/cutouts/10-proyecto-okapi-detail-1.webp"
+      ]
+    },
+    {
+      "id": "11-resonancia-del-alma",
+      "number": "11",
+      "section": "ramus",
+      "title": "Resonancia del Alma",
+      "subtitle": "Festival Musical • Identidad Visual",
+      "category": "Conceptualización y Diseño Corporativo",
+      "year": "2026",
+      "featured": true,
+      "summary": "Identidad para un festival musical donde el fenómeno físico de la resonancia simboliza el encuentro entre personas, almas y música.",
+      "text": [
+        "Una identidad visual para un festival musical construido alrededor del concepto “Resonancia del alma”, pensado como un espacio donde distintas bandas y personas pudieran encontrarse a través de la música. Hay formas de conexión que no necesitan explicación. La música pertenece a ese territorio: puede reunir a personas distintas bajo una misma sensación, aun cuando no compartan las mismas palabras. Desde esa idea, la identidad busca representar la música como una fuerza de encuentro y resonancia, y llevar esa experiencia a los distintos puntos de contacto del festival.",
+        "La identidad visual de este festival busca que conectemos, conectemos con la música, el entorno, las personas, y por esto, ellas y sus almas se vuelven el centro de atención en las piezas.",
+        "Resonancia es fenómeno físico que ocurre cuando un objeto o sistema empieza a vibrar: su amplitud es mucho mayor porque recibe una onda externa y la frecuencia de la onda coincide con su frecuencia natural."
+      ],
+      "tags": [
+        "Festival de Música",
+        "Identidad Visual",
+        "Resonancia",
+        "Póster y Merchandise"
+      ],
+      "credits": null,
+      "pageStart": 36,
+      "pageEnd": 38,
+      "disciplines": [
+        "branding",
+        "editorial"
+      ],
+      "stampId": "resonancia",
+      "images": {
+        "cover": "/images/project-11-cover.webp",
+        "gallery": [
+          "/images/project-11-cover.webp",
+          "/images/project-11-posters.webp"
+        ]
+      },
+      "primaryCutout": "/images/cutouts/11-resonancia-del-alma-art.webp",
+      "secondaryCutouts": [
+        "/images/cutouts/11-resonancia-del-alma-detail-1.webp"
+      ]
+    },
+    {
+      "id": "12-el-efecto-albedo",
+      "number": "12",
+      "section": "ramus",
+      "title": "La unicidad del copo y el efecto albedo",
+      "subtitle": "Exploración visual y diseño de vitral",
+      "category": "Conceptualización, Investigación e Ilustración",
+      "year": "2026",
+      "featured": false,
+      "summary": "Exploración entre ciencia y poesía: la capacidad de reflejar radiación solar y la singularidad irrepetible de cada copo de nieve transformada en vitral.",
+      "text": [
+        "El efecto albedo es la capacidad que tiene una superficie para reflejar la radiación solar.",
+        "La investigación científica se encuentra aquí con una idea profundamente humana: la singularidad. Cada copo de nieve posee una estructura propia y, en esa diferencia, encuentra también su belleza. Esta pieza busca traducir esa relación entre conocimiento y contemplación en un puente pensado para transmitir calma y abrir una ventana para detenerse a observar y reflexionar.",
+        "Una exploración visual que parte del estudio del efecto albedo y de la particularidad de los copos de nieve para construir un vitral. El proyecto nació de una conversación y de una pregunta sencilla: ¿cómo representar aquello que nos recuerda que, aunque compartamos un mismo mundo, cada uno de nosotros es irrepetiblemente distinto? ¿Y si esto es así, qué es aquello que nos vuelve distintos?"
+      ],
+      "tags": [
+        "Vitral",
+        "Efecto Albedo",
+        "Ilustración Científica",
+        "Singularidad"
+      ],
+      "credits": null,
+      "pageStart": 39,
+      "pageEnd": 39,
+      "disciplines": [
+        "infografia",
+        "ilustracion"
+      ],
+      "stampId": "albedo",
+      "images": {
+        "cover": "/images/project-12-cover.webp",
+        "gallery": [
+          "/images/project-12-cover.webp"
+        ]
+      },
+      "primaryCutout": "/images/cutouts/12-el-efecto-albedo-art.webp",
+      "secondaryCutouts": [
+        "/images/cutouts/12-el-efecto-albedo-detail-1.webp"
+      ]
+    },
+    {
+      "id": "13-los-hijos-del-tercer-planeta",
+      "number": "13",
+      "section": "ramus",
+      "title": "Mensajes de los hijos del Tercer Planeta",
+      "subtitle": "Homenaje infográfico y conceptual a Carl Sagan",
+      "category": "Conceptualización, Investigación e Ilustración",
+      "year": "2026",
+      "featured": true,
+      "summary": "Infografía y ensayo visual sobre el Disco Voyager, la Placa Pioneer y la necesidad humana de enviar señales a lo desconocido.",
+      "text": [
+        "Carl Sagan fue un célebre astrónomo, astrofísico, cosmólogo, astrobiólogo, escritor y uno de los divulgadores científicos más importantes de la historia.",
+        "Disco Voyager: es una cápsula del tiempo en formato de disco fonográfico de cobre bañado en oro.",
+        "La Placa de la Pioneer: una lámina de aluminio anodizado en oro con varios símbolos grabados para enviar un mensaje a la vida extraterrestre.",
+        "El proyecto se construye alrededor de una paradoja: queremos comunicarnos con aquello que desconocemos. Las placas, los discos, las órbitas y la figura humana sin rostro funcionan como fragmentos de un lenguaje todavía incompleto. Más que ilustrar una historia sobre extraterrestres, la pieza explora la necesidad humana de enviar señales, interpretar otras y preguntarnos qué significa ser capaces de comunicarnos más allá de nuestros propios límites.",
+        "Una infografía que parte de una pregunta imaginaria: ¿qué ocurriría si la humanidad lograra establecer contacto con vida extraterrestre? A partir de esta premisa, el proyecto recupera investigaciones, ideas y recursos vinculados al trabajo de Carl Sagan sobre la comunicación con posibles formas de vida fuera de la Tierra.",
+        "Visualmente, la pieza retoma esta sensación de incertidumbre. La figura humana sin rostro evita representar una identidad individual y funciona, en cambio, como una presencia universal; las órbitas y trayectorias sugieren distancia, movimiento y búsqueda; mientras que los distintos registros gráficos aparecen como rastros de información que necesitan ser observados, relacionados e interpretados. La composición busca que el recorrido por la información se sienta también como un proceso de descubrimiento, donde cada elemento aporta una nueva pista."
+      ],
+      "tags": [
+        "Infografía",
+        "Carl Sagan",
+        "Voyager",
+        "Cosmología",
+        "Diseño de Información"
+      ],
+      "credits": null,
+      "pageStart": 40,
+      "pageEnd": 42,
+      "disciplines": [
+        "infografia",
+        "editorial"
+      ],
+      "stampId": "voyager",
+      "images": {
+        "cover": "/images/project-13-cover.webp",
+        "gallery": [
+          "/images/project-13-cover.webp",
+          "/images/project-13-infographic.webp"
+        ]
+      },
+      "primaryCutout": "/images/cutouts/13-los-hijos-del-tercer-planeta-art.webp",
+      "secondaryCutouts": [
+        "/images/cutouts/13-los-hijos-del-tercer-planeta-detail-1.webp",
+        "/images/cutouts/13-los-hijos-del-tercer-planeta-detail-2.webp"
+      ]
+    },
+    {
+      "id": "14-senaletica-af",
+      "number": "14",
+      "section": "ramus",
+      "title": "Señalética Alianza Francesa",
+      "subtitle": "Sistema de señalética y diseño de personaje para la Mediateca",
+      "category": "Conceptualización, Investigación e Ilustración",
+      "year": "2026",
+      "featured": false,
+      "summary": "Desarrollo colaborativo de señalética espacial guiada por un personaje ilustrado inspirado en la estética y cultura francesa.",
+      "text": [
+        "Este proyecto consistió en el desarrollo colaborativo de un sistema de señalética para la Alianza Francesa, pensado principalmente para acompañar la experiencia dentro de su mediateca: un espacio de encuentro en el que conviven la lectura, el aprendizaje, el entretenimiento y distintas actividades culturales. Mi participación se centró en la conceptualización y diseño del personaje que funciona como hilo conductor del sistema, y busca crear una conexión con los públicos de la AF.",
+        "El personaje debía tener una razón para existir dentro del espacio, ser capaz de acompañar la información y, al mismo tiempo, aportar cercanía a cada una de las áreas (Rincón de lectura, Sala de trabajo, Sala de videojuegos, Mediateca y juegos, Área de juegos, No usar el celular dentro del aula). Por esta razón, su construcción partió de una investigación de referentes visuales asociados a la cultura y estética francesa. Se exploraron estilos de ilustración y caricatura caracterizados por formas sencillas, trazos limpios y una expresividad construida a partir de pocos elementos, pero con significados y referencias a la cultura francesa."
+      ],
+      "tags": [
+        "Señalética",
+        "Wayfinding",
+        "Diseño de Personaje",
+        "Alianza Francesa",
+        "Ilustración"
+      ],
+      "credits": "Colaboración: Desireé Sixo, Mariana Azucena, Erin Figueroa",
+      "pageStart": 43,
+      "pageEnd": 44,
+      "disciplines": [
+        "senaletica",
+        "ilustracion"
+      ],
+      "stampId": "alianza",
+      "images": {
+        "cover": "/images/project-14-cover.webp",
+        "gallery": [
+          "/images/project-14-cover.webp"
+        ]
+      },
+      "primaryCutout": "/images/cutouts/14-senaletica-af-art.webp",
+      "secondaryCutouts": [
+        "/images/cutouts/14-senaletica-af-detail-1.webp"
+      ]
+    },
+    {
+      "id": "15-juntos-por-el-espino",
+      "number": "15",
+      "section": "ramus",
+      "title": "Juntos por el Espino • Oasis Music Fest",
+      "subtitle": "Activismo ambiental, música y comunidad",
+      "category": "Conceptualización, Investigación e Ilustración",
+      "year": "2026",
+      "featured": true,
+      "summary": "Propuesta de festival musical para visibilizar la problemática socioambiental del parque El Espino y recolectar firmas mediante ilustración hecha a mano.",
+      "text": [
+        "Oasis Fest nace a partir de una problemática ambiental y social vinculada al caso de El Espino y a la necesidad de generar nuevas formas de participación alrededor de su protección. La propuesta parte de una pregunta: ¿cómo acercar una causa ambiental a públicos que quizá no participarían inicialmente en una movilización tradicional? A partir de esta inquietud, el proyecto plantea un festival musical como un espacio de encuentro capaz de reunir a artistas, comunidades y públicos jóvenes alrededor de un objetivo común: visibilizar la situación, generar conversación y transformar la asistencia al evento en una acción concreta mediante la recolección de firmas.",
+        "Más que comunicar únicamente la problemática, me interesaba explorar cómo una causa puede encontrar nuevas formas de circular cuando logra insertarse en espacios que las personas ya reconocen como propios. La música funciona entonces como un punto de conexión: permite que el mensaje salga de los formatos tradicionales de denuncia y encuentre un escenario más cercano, colectivo y participativo. El festival se convierte así en un puente entre entretenimiento y conciencia ambiental, donde acercarse por un artista, compartir con otras personas o simplemente sentir curiosidad puede convertirse también en una oportunidad para conocer lo que sucede en El Espino e involucrarse.",
+        "Desde lo visual, la propuesta busca conservar esa misma cercanía. La ilustración hecha a mano introduce un lenguaje más humano y espontáneo, alejándose de una comunicación excesivamente institucional. Los animales y elementos naturales asociados al parque adquieren protagonismo como una manera de representar aquello que se busca proteger y, al mismo tiempo, construir una relación emocional con el territorio."
+      ],
+      "tags": [
+        "Activismo Ecológico",
+        "Festival",
+        "Ilustración Manual",
+        "El Espino",
+        "Campaña Social"
+      ],
+      "credits": null,
+      "pageStart": 45,
+      "pageEnd": 46,
+      "disciplines": [
+        "ilustracion",
+        "branding"
+      ],
+      "stampId": "oasis",
+      "images": {
+        "cover": "/images/project-15-cover.webp",
+        "gallery": [
+          "/images/project-15-cover.webp"
+        ]
+      },
+      "primaryCutout": "/images/cutouts/15-juntos-por-el-espino-art.webp",
+      "secondaryCutouts": [
+        "/images/cutouts/15-juntos-por-el-espino-detail-1.webp"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "category": "Técnicas Visuales",
+      "items": [
+        "Mix Media",
+        "Collage Digital",
+        "Ilustración Infantil & Editorial",
+        "Dibujo Manual",
+        "Pintura y Texturas"
+      ]
+    },
+    {
+      "category": "Branding & Identidad",
+      "items": [
+        "Identidad Visual",
+        "Sistemas Corporativos",
+        "Manuales de Marca",
+        "Naming & Conceptualización"
+      ]
+    },
+    {
+      "category": "Diseño Aplicado",
+      "items": [
+        "Diseño Editorial",
+        "Señalética & Wayfinding",
+        "Infografía Científica",
+        "Diseño de Personajes",
+        "Experiencias Web"
+      ]
+    },
+    {
+      "category": "Software & Herramientas",
+      "items": [
+        "Adobe InDesign",
+        "Adobe Illustrator",
+        "Adobe Photoshop",
+        "Procreate",
+        "Figma"
+      ]
+    }
+  ],
+  "colophon": {
+    "edition": "Diciembre de 2026 • Primera edición",
+    "university": "Universidad Dr. José Matías Delgado",
+    "designer": "Diseño elaborado por Erin Figueroa",
+    "resources": [
+      {
+        "name": "Texturelabs",
+        "url": "https://texturelabs.org"
+      },
+      {
+        "name": "Public Domain Image Archive",
+        "url": "https://pdimagearchive.org"
+      },
+      {
+        "name": "Feral UI",
+        "url": "https://feralui.dev"
+      },
+      {
+        "name": "HeroKit",
+        "url": "https://herokit.app"
+      },
+      {
+        "name": "Mockup Tree",
+        "url": "https://mockuptree.com"
+      }
+    ],
+    "note": "Uso de inteligencia artificial para creación de ciertos mockups."
+  }
+}
