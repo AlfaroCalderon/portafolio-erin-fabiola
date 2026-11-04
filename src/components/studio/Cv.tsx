@@ -32,7 +32,7 @@ const cvSkills = [
   { c: "Software Editorial", i: ["Adobe InDesign", "Illustrator", "Photoshop", "Figma", "Glyphs"] },
   { c: "Especialidades", i: ["Diseño Editorial", "Identidad de Marca", "Mix Media / Collage", "Señalética", "Sistemas de Información"] },
 ];
-const swatches = [["#800000", "Vino"], ["#111111", "Tinta"], ["#D9D9D9", "Gris muro"], ["#F4F2EE", "Papel"]];
+const swatches = [["#8B2354", "Radix"], ["#6F6B30", "Truncus"], ["#AA9821", "Ramus"], ["#E8B8C8", "Rosa"], ["#231F20", "Tinta"]];
 const tools = [MousePointer2, PenTool, Type, Square, Circle, Pipette, Hand];
 
 function Layer({ name, set, children, className = "", inner = "" }: { name: string; set: (v: string) => void; children: ReactNode; className?: string; inner?: string }) {
@@ -78,7 +78,7 @@ export function CV({ d, open }: { d: PortfolioData; open: (p: Project) => void }
       <div className="mb-12 flex flex-col justify-between gap-6 lg:flex-row lg:items-end">
         <div>
           <p className="mb-3 font-mono text-[11px] uppercase tracking-[.25em] text-vino">CV • Simulación de Mesa de Trabajo • Illustrator / Figma</p>
-          <h2 className="font-sans text-[16vw] font-black uppercase leading-[.8] tracking-tighter lg:text-[11vw]">
+          <h2 className="font-sans text-[12vw] font-black uppercase leading-[.8] tracking-tighter lg:text-[11vw]">
             <Words t="Curriculum" />
           </h2>
         </div>
@@ -89,7 +89,7 @@ export function CV({ d, open }: { d: PortfolioData; open: (p: Project) => void }
         </Reveal>
       </div>
 
-      <div className="border-2 border-ink bg-white shadow-[12px_12px_0_#111]">
+      <div className="border-2 border-ink bg-white shadow-[12px_12px_0_#231F20]">
         <div className="flex items-center justify-between border-b border-ink bg-gris px-4 py-2 font-mono text-[11px]">
           <span className="truncate font-bold">✦ Curriculum_Vitae_Erin.ai @ 100% (RGB/Vista previa)</span>
           <span className="hidden sm:block">SANGRADO ACTIVO • CMYK 300 DPI</span>
@@ -97,7 +97,7 @@ export function CV({ d, open }: { d: PortfolioData; open: (p: Project) => void }
         <div className="flex">
           <ul className="hidden w-11 shrink-0 flex-col items-center gap-1 border-r border-ink bg-paper py-3 sm:flex" aria-hidden>
             {tools.map((T, i) => (
-              <motion.li key={i} whileHover={{ scale: 1.2, backgroundColor: "#800000", color: "#fff" }} className={`grid size-8 place-items-center ${i === 0 ? "bg-ink text-paper" : ""}`}>
+              <motion.li key={i} whileHover={{ scale: 1.2, backgroundColor: "#8B2354", color: "#fff" }} className={`grid size-8 place-items-center ${i === 0 ? "bg-ink text-paper" : ""}`}>
                 <T className="size-4" />
               </motion.li>
             ))}
@@ -105,7 +105,7 @@ export function CV({ d, open }: { d: PortfolioData; open: (p: Project) => void }
 
           <div className="min-w-0 flex-1 bg-gris p-3 sm:p-8">
             <p className="mb-2 font-mono text-[10px] uppercase tracking-widest text-muted">Mesa de trabajo 1 — CV</p>
-            <article className="mx-auto max-w-5xl divide-y divide-ink/10 bg-white shadow-[0_20px_60px_rgba(17,17,17,.2)]">
+            <article className="mx-auto max-w-5xl divide-y divide-ink/10 bg-white shadow-[0_20px_60px_rgba(35,31,32,.2)]">
               <Layer name="Encabezado" set={setSel} inner="grid items-center gap-6 sm:grid-cols-[auto_1fr_auto]">
                 <div className="relative h-28 w-20 border-2 border-dashed border-ink/40 bg-paper p-1">
                   <Image src="/images/hero-tree.webp" alt="Sello Conacaste" fill sizes="80px" className="object-cover" />
@@ -189,7 +189,7 @@ export function CV({ d, open }: { d: PortfolioData; open: (p: Project) => void }
                       <h4 className="font-mono text-[11px] font-bold uppercase tracking-widest text-muted">{g.c}</h4>
                       <div className="flex flex-wrap gap-2">
                         {g.i.map((t) => (
-                          <motion.kbd key={t} whileHover={{ y: -3, backgroundColor: "#111", color: "#fff" }} className="border border-ink bg-white px-2.5 py-1 font-mono text-[11px] shadow-[0_2px_0_#111]">
+                          <motion.kbd key={t} whileHover={{ y: -3, backgroundColor: "#231F20", color: "#fff" }} className="border border-ink bg-white px-2.5 py-1 font-mono text-[11px] shadow-[0_2px_0_#231F20]">
                             {t}
                           </motion.kbd>
                         ))}

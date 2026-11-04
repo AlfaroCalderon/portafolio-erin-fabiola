@@ -1,11 +1,14 @@
 @import "tailwindcss";
 
 @theme {
-  --color-paper: #f4f2ee;
-  --color-ink: #111111;
-  --color-vino: #800000;
-  --color-gris: #d9d9d9;
-  --color-muted: #686868;
+  --color-paper: #ffffff;
+  --color-ink: #231f20;
+  --color-vino: #8b2354;
+  --color-olive: #6f6b30;
+  --color-ochre: #aa9821;
+  --color-rosa: #e8b8c8;
+  --color-gris: #ede6ea;
+  --color-muted: #625950;
   --font-serif: var(--font-cormorant), Georgia, serif;
   --font-sans: var(--font-outfit), system-ui, sans-serif;
   --font-hand: var(--font-handrawn), cursive;
@@ -18,20 +21,20 @@
 
 html {
   scroll-behavior: smooth;
-  background: #f4f2ee;
+  background: #ffffff;
 }
 
 body {
   overflow-x: clip;
-  background: #f4f2ee;
-  color: #111;
+  background: #ffffff;
+  color: #231f20;
   font-family: var(--font-cormorant), Georgia, serif;
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
 }
 
 ::selection {
-  background: #800000;
+  background: #8b2354;
   color: #fff;
 }
 
@@ -39,7 +42,7 @@ body {
   width: 6px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #800000;
+  background: #8b2354;
 }
 
 @keyframes marquee {
@@ -67,6 +70,40 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .animate-marquee,
   .animate-caret {
+    animation: none;
+  }
+}
+
+/* ───── Hojas del árbol ───── */
+/* Capa de hojas que se mece. --dx = amplitud, --dur = duración. Solo transform: lo anima el compositor (sin repintar) */
+@keyframes wind {
+  0%,
+  100% {
+    transform: translate3d(calc(var(--dx, 3px) * -1), 0, 0);
+  }
+  50% {
+    transform: translate3d(var(--dx, 3px), -2px, 0);
+  }
+}
+.wind {
+  animation: wind var(--dur, 6s) ease-in-out infinite;
+  will-change: transform;
+}
+/* Hojas que caen por la pantalla */
+@keyframes fall {
+  from {
+    transform: translate3d(0, -12vh, 0) rotate(0deg);
+  }
+  to {
+    transform: translate3d(var(--dx, 6vw), 112vh, 0) rotate(var(--rot, 260deg));
+  }
+}
+.fall {
+  animation: fall var(--dur, 16s) linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .wind,
+  .fall {
     animation: none;
   }
 }

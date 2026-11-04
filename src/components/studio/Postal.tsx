@@ -45,7 +45,7 @@ export function Postal() {
             whileHover={{ y: -6, rotate: -2 }}
             whileTap={{ scale: 0.92 }}
             onClick={() => s.stamp !== x.id && commit({ stamp: x.id }, x.n)}
-            className={`flex cursor-pointer items-center gap-3 border-2 p-2 pr-4 text-left transition-colors ${s.stamp === x.id ? "border-vino bg-white shadow-[5px_5px_0_#800000]" : "border-ink/20 bg-paper"}`}
+            className={`flex cursor-pointer items-center gap-3 border-2 p-2 pr-4 text-left transition-colors ${s.stamp === x.id ? "border-vino bg-white shadow-[5px_5px_0_#8B2354]" : "border-ink/20 bg-paper"}`}
           >
             <span className="relative h-12 w-9 overflow-hidden border border-ink/30">
               <Image src={x.i} alt={x.n} fill sizes="40px" className="object-cover" />
@@ -58,8 +58,8 @@ export function Postal() {
         ))}
       </div>
 
-      <motion.div initial={{ opacity: 0, y: 80, rotate: 1 }} whileInView={{ opacity: 1, y: 0, rotate: 0 }} viewport={{ once: false, margin: "-120px" }} transition={{ ease, duration: 1 }} className="relative grid overflow-hidden border-2 border-ink bg-white shadow-[14px_14px_0_#111] lg:grid-cols-2">
-        <div className="absolute inset-x-0 top-0 h-2 bg-[repeating-linear-gradient(135deg,#800000_0_14px,#fff_14px_28px,#111_28px_42px,#fff_42px_56px)]" />
+      <motion.div initial={{ opacity: 0, y: 80, rotate: 1 }} whileInView={{ opacity: 1, y: 0, rotate: 0 }} viewport={{ once: false, margin: "-120px" }} transition={{ ease, duration: 1 }} className="relative grid overflow-hidden border-2 border-ink bg-white shadow-[14px_14px_0_#231F20] lg:grid-cols-2">
+        <div className="absolute inset-x-0 top-0 h-2 bg-[repeating-linear-gradient(135deg,#8B2354_0_14px,#fff_14px_28px,#111_28px_42px,#fff_42px_56px)]" />
         <div className="relative min-h-[320px] border-b-2 border-ink bg-gris lg:border-b-0 lg:border-r-2">
           <AnimatePresence mode="wait">
             <motion.div key={st.id} initial={{ opacity: 0, scale: 1.15 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.9 }} transition={{ ease, duration: 0.6 }} className="absolute inset-8">

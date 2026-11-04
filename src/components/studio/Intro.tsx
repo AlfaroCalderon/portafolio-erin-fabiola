@@ -11,7 +11,7 @@ const A = "Donde las ramas ";
 const B = "vuelven a unirse.";
 const FULL = A + B;
 
-function Typed({ replay }: { replay: number }) {
+export function Typed({ replay }: { replay: number }) {
   const [n, setN] = useState(0);
   useEffect(() => {
     let c = replay ? FULL.length : 0;
@@ -80,9 +80,9 @@ export function Hero({ a }: { a: Author }) {
         initial={{ opacity: 0, scale: 0.8, rotate: -6 }}
         animate={{ opacity: 1, scale: 1, rotate: 3 }}
         transition={{ ease, duration: 1.4, delay: 0.4 }}
-        className="absolute bottom-28 right-[4vw] z-0 w-[44vw] max-w-[440px] sm:w-[32vw]"
+        className="absolute bottom-40 right-[4vw] z-0 w-[40vw] max-w-[340px] sm:w-[26vw]"
       >
-        <div className="relative aspect-[4/5] border border-ink bg-white p-3 shadow-[0_30px_80px_rgba(17,17,17,.15)]">
+        <div className="relative aspect-[4/5] border border-ink bg-white p-3 shadow-[0_30px_80px_rgba(35,31,32,.15)]">
           <div className="relative h-full w-full">
             <Image src="/images/hero-tree.webp" alt="Árbol de Conacaste - Anastomosis" fill preload sizes="(max-width:768px) 44vw, 440px" className="object-contain" />
           </div>
@@ -112,11 +112,11 @@ export function Hero({ a }: { a: Author }) {
           className="group relative flex cursor-pointer items-center gap-2 font-mono text-sm"
         >
           {["Ctrl", "Z"].map((k) => (
-            <kbd key={k} className="border-2 border-ink bg-white px-4 py-3 shadow-[0_5px_0_#111] transition-all group-hover:bg-vino group-hover:text-white group-active:translate-y-1 group-active:shadow-none">
+            <kbd key={k} className="border-2 border-ink bg-white px-4 py-3 shadow-[0_5px_0_#231F20] transition-all group-hover:bg-vino group-hover:text-white group-active:translate-y-1 group-active:shadow-none">
               {k}
             </kbd>
           ))}
-          <span className="absolute -right-24 -top-6 -rotate-6 font-hand text-2xl text-vino">pruébalo ↙</span>
+          <span className="absolute -top-9 left-0 -rotate-6 whitespace-nowrap font-hand text-2xl text-vino">pruébalo ↓</span>
         </motion.button>
         <Mag href="#index" className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-widest">
           Baja <motion.span animate={{ y: [0, 6, 0] }} transition={{ repeat: Infinity, duration: 1.4, ease: "easeInOut" }}>↓</motion.span>
@@ -131,7 +131,7 @@ export function Marquee({ items }: { items: string[] }) {
   const sk = useSpring(useTransform(useVelocity(scrollY), [-3000, 3000], [-10, 10]), { stiffness: 200, damping: 30 });
   const row = items.concat(items);
   return (
-    <section className="select-none overflow-hidden bg-ink py-10 text-paper">
+    <section className="select-none overflow-hidden bg-olive py-10 text-white">
       <div className="mb-5 flex justify-between px-6 font-mono text-[11px] uppercase tracking-widest text-white/60 sm:px-12">
         <span>Disciplinas & Dominio Técnico</span>
         <span>Anastomosis • Erin Figueroa</span>
@@ -140,7 +140,7 @@ export function Marquee({ items }: { items: string[] }) {
         {row.map((t, i) => (
           <span key={i} className={`flex shrink-0 items-center gap-8 pr-8 font-sans text-5xl font-black uppercase tracking-tighter sm:text-7xl ${i % 2 ? "stroke-t" : ""}`}>
             {t}
-            <span className="size-3 rounded-full bg-vino" />
+            <span className="size-3 rounded-full bg-ochre" />
           </span>
         ))}
       </motion.div>
@@ -208,7 +208,7 @@ export function Manifest({ a }: { a: Author }) {
             <Words t="«Mira sus ramas, se han fusionado y son una sola»" />
           </h2>
           <Reveal d={0.2} className="mt-10 max-w-sm">
-            <motion.div whileHover={{ rotate: -2, y: -6 }} transition={{ ease, duration: 0.5 }} className="relative border border-ink bg-white p-5 pb-8 shadow-[0_20px_50px_rgba(17,17,17,.12)]">
+            <motion.div whileHover={{ rotate: -2, y: -6 }} transition={{ ease, duration: 0.5 }} className="relative border border-ink bg-white p-5 pb-8 shadow-[0_20px_50px_rgba(35,31,32,.12)]">
               <div className="relative aspect-square bg-paper">
                 <Image src="/images/outro-tree.webp" alt="Árbol de Conacaste" fill sizes="384px" className="object-contain" />
               </div>

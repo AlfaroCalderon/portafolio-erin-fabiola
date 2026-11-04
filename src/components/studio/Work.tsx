@@ -17,7 +17,7 @@ function Row({ p, col, i, hov, setHov, open, pinned, pin, onDrag, onEnd }: { p: 
       dragListener={false}
       dragControls={dc}
       animate={{ opacity: hov && hov !== p.id ? 0.2 : 1 }}
-      whileDrag={{ scale: 1.02, zIndex: 5, backgroundColor: "#fff", boxShadow: "0 24px 60px rgba(17,17,17,.2)" }}
+      whileDrag={{ scale: 1.02, zIndex: 5, backgroundColor: "#fff", boxShadow: "0 24px 60px rgba(35,31,32,.2)" }}
       onDragStart={onDrag}
       onDragEnd={onEnd}
       onMouseEnter={() => setHov(p.id)}
@@ -94,7 +94,7 @@ export function Index({ d, open }: { d: PortfolioData; open: Open }) {
       <div className="mb-16 flex flex-col justify-between gap-8 border-b border-ink pb-8 lg:flex-row lg:items-end">
         <div>
           <p className="mb-4 font-mono text-[11px] uppercase tracking-[.25em] text-vino">Directorio Editorial • {d.projects.length} Obras Registradas</p>
-          <h2 className="font-sans text-[26vw] font-black lowercase leading-[.75] tracking-tighter lg:text-[20vw]">
+          <h2 className="font-sans text-[19vw] font-black lowercase leading-[.75] tracking-tighter lg:text-[20vw]">
             <Words t="index" />
           </h2>
         </div>
@@ -154,7 +154,7 @@ export function Index({ d, open }: { d: PortfolioData; open: Open }) {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.6 }}
               transition={{ ease, duration: 0.45 }}
-              className="ml-8 mt-8 w-80 border border-ink shadow-[0_30px_70px_rgba(17,17,17,.3)]"
+              className="ml-8 mt-8 w-80 border border-ink shadow-[0_30px_70px_rgba(35,31,32,.3)]"
             >
               <div className="flex items-center gap-1.5 border-b border-ink bg-white px-3 py-2">
                 {[0, 1, 2].map((k) => (

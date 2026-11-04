@@ -32,22 +32,22 @@
     "sections": {
       "radix": {
         "name": "Radix (Raíces)",
-        "wine": "#822B59",
+        "wine": "#8B2354",
         "wineLight": "#F5E9EE",
         "blush": "#E8B8C8",
         "mood": "Profundo, pasional, literario"
       },
       "truncus": {
         "name": "Truncus (Tronco)",
-        "moss": "#2B4A3E",
+        "moss": "#6F6B30",
         "mossLight": "#EAF2EE",
         "terracotta": "#C86D48",
         "mood": "Sólido, arquitectónico, enraizado"
       },
       "ramus": {
         "name": "Ramus (Ramas)",
-        "ochre": "#A88828",
-        "ochreLight": "#FAF4E1",
+        "ochre": "#AA9821",
+        "ochreLight": "#F6F3DC",
         "celestial": "#223547",
         "mood": "Expansivo, astronómico, resonante"
       }

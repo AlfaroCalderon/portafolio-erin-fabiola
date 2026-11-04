@@ -14,7 +14,7 @@ export function Fin({ a, c }: { a: Author; c: ColType }) {
   const col = "space-y-2 font-mono text-[11px] leading-relaxed text-white/60";
   const h = "mb-2 block font-bold uppercase tracking-widest text-white";
   return (
-    <section ref={ref} id="fin" data-step="Y fin" className="overflow-hidden bg-ink text-paper">
+    <section ref={ref} id="fin" data-step="Y fin" className="overflow-hidden bg-vino text-white">
       <div className="grid gap-12 px-6 pb-20 pt-28 sm:px-12 sm:pt-40 lg:grid-cols-2">
         <div className="space-y-8">
           <p className="font-mono text-[11px] uppercase tracking-[.25em] text-[#E8B8C8]">Y fin • Colofón & Agradecimientos</p>
@@ -28,7 +28,7 @@ export function Fin({ a, c }: { a: Author; c: ColType }) {
             <div className="relative h-full w-full">
               <Image src="/images/outro-tree.webp" alt="Árbol de Conacaste" fill sizes="448px" className="object-contain" />
             </div>
-            <div className="absolute -bottom-6 -right-4 rotate-6 bg-vino px-5 py-3 font-hand text-3xl leading-none text-white shadow-xl">
+            <div className="absolute -bottom-6 -right-4 rotate-6 bg-olive px-5 py-3 font-hand text-3xl leading-none text-white shadow-xl">
               att:<br />
               <b className="font-sans text-xl font-black uppercase">{a.name}</b>
             </div>
@@ -121,7 +121,7 @@ export function Reader({ p, close }: { p: Project | null; close: () => void }) {
               {p.subtitle && <p className="font-serif text-2xl italic text-vino">{p.subtitle}</p>}
             </motion.div>
 
-            <motion.div {...it(2)} className="relative aspect-[4/3] border border-ink bg-white p-4 shadow-[8px_8px_0_#111]">
+            <motion.div {...it(2)} className="relative aspect-[4/3] border border-ink bg-white p-4 shadow-[8px_8px_0_#231F20]">
               <div className="relative h-full w-full bg-paper">
                 <Image src={p.primaryCutout || p.images.cover} alt={p.title} fill preload sizes="672px" className="object-contain" />
               </div>
@@ -162,7 +162,7 @@ export function Reader({ p, close }: { p: Project | null; close: () => void }) {
                 <span className={lb}>Descriptores</span>
                 <div className="flex flex-wrap gap-2">
                   {p.tags.map((t) => (
-                    <kbd key={t} className="border border-ink px-2.5 py-1 font-mono text-[11px] shadow-[0_2px_0_#111]">{t}</kbd>
+                    <kbd key={t} className="border border-ink px-2.5 py-1 font-mono text-[11px] shadow-[0_2px_0_#231F20]">{t}</kbd>
                   ))}
                 </div>
               </div>

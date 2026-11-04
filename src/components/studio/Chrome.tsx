@@ -6,7 +6,7 @@ import { Undo2, Redo2, X } from "lucide-react";
 import { useStudio } from "@/context/HistoryContext";
 import { ease } from "./kit";
 
-const C = "rgba(17,17,17,.55)";
+const C = "rgba(35,31,32,.55)";
 const hT = `linear-gradient(90deg,${C} 1px,transparent 1px)`;
 const vT = `linear-gradient(180deg,${C} 1px,transparent 1px)`;
 const topR = { backgroundImage: `${hT},${hT},${hT}`, backgroundSize: "10px 5px,50px 9px,100px 15px", backgroundPosition: "0 100%", backgroundRepeat: "repeat-x" };
@@ -96,11 +96,11 @@ export default function Chrome() {
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ ease, duration: 0.8 }} className="pointer-events-none fixed inset-0 z-30">
             <div
               className="absolute inset-0"
-              style={{ backgroundImage: "linear-gradient(rgba(128,0,0,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(128,0,0,.06) 1px,transparent 1px)", backgroundSize: "80px 80px" }}
+              style={{ backgroundImage: "linear-gradient(rgba(139,35,84,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(139,35,84,.06) 1px,transparent 1px)", backgroundSize: "80px 80px" }}
             />
             <div
               className="absolute inset-y-0 left-1/2 w-full max-w-7xl -translate-x-1/2 border-x border-vino/15"
-              style={{ backgroundImage: "repeating-linear-gradient(90deg,rgba(128,0,0,.10) 0 1px,transparent 1px calc(100%/12))" }}
+              style={{ backgroundImage: "repeating-linear-gradient(90deg,rgba(139,35,84,.10) 0 1px,transparent 1px calc(100%/12))" }}
             />
             <motion.div style={{ x: mx }} className="absolute inset-y-0 left-0 w-px bg-vino/35" />
             <motion.div style={{ y: my }} className="absolute inset-x-0 top-0 h-px bg-vino/35" />
