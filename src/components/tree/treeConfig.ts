@@ -68,7 +68,7 @@ export const GAP_VW = 5; // ★ escritorio: distancia tronco → borde de la tar
 export const GAP_VW_MOBILE = 18; // ★ móvil: la rama termina a esta distancia del tronco (el punto de anclaje)
 export const EXTRA_BRANCHES_VH = [100, 118, 175, 200, 225, 250, 300, 320, 345, 365, 420, 435]; // ramas decorativas sin tarjeta (vh desde arriba del árbol)
 /** Colores de hojas [color, peso]. Todos de la paleta del PDF: oliva, ocre, vino y rosa (flor). */
-export const LEAF_COLORS: [string, number][] = [["#6F6B30", 30], ["#7D7A38", 20], ["#5E5A28", 16], ["#AA9821", 14], ["#8B2354", 12], ["#E8B8C8", 8]];
-export const CROWN_BOUGHS = 12; // ★ ramas gruesas que salen de la copa
-export const ROOT_COUNT = 11; // ★ raíces principales
+export const LEAF_COLORS: [string, number][] = [["#6F6B30", 38], ["#7D7A38", 24], ["#5E5A28", 20], ["#AA9821", 12], ["#8B2354", 4], ["#E8B8C8", 2]];
+export const CROWN_BOUGHS = 11; // ★ ramas gruesas que salen de la copa
+export const ROOT_COUNT = 9; // ★ aletas de raíz tabular (impar = una queda al centro)
 export const WIND_LAYERS = 4; // capas de hojas que se mecen (más capas = viento más variado, algo más de memoria)

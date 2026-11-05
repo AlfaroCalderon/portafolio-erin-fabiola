@@ -93,12 +93,12 @@ export default function TreeJourney({ d, a, open }: { d: PortfolioData; a: Autho
       {!reduced && <TreeWorld ref={world} />}
 
       {/* COPA (Hero) */}
-      <div ref={copa} className={`z-10 flex flex-col items-center justify-center gap-6 px-6 text-center ${reduced ? "relative pb-12" : "absolute inset-x-0 top-0 h-svh pt-20"}`}>
+      <div ref={copa} className={`copa-text z-10 flex flex-col items-center justify-center gap-6 px-6 text-center ${reduced ? "relative pb-12" : "absolute inset-x-0 top-0 h-svh pt-20"}`}>
         <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_52%_36%_at_50%_52%,rgba(255,255,255,.9),rgba(255,255,255,.6)_55%,transparent_82%)]" />
         <p className="font-mono text-[11px] uppercase tracking-[.25em] text-ink [text-shadow:0_0_10px_#fff,0_0_4px_#fff]">
           {a.name} • {a.role}
         </p>
-        <h1 className="relative font-sans text-[11vw] font-black uppercase leading-[.86] tracking-tighter [text-shadow:0_0_26px_#fff,0_0_10px_#fff] md:text-[7vw]">
+        <h1 className="relative font-sans text-[11vw] uppercase leading-[.86] tracking-tighter [text-shadow:0_0_26px_#fff,0_0_10px_#fff] md:text-[7vw]">
           <Typed replay={replay} />
         </h1>
         <p className="max-w-md font-serif text-xl leading-snug [text-shadow:0_0_14px_#fff,0_0_6px_#fff]">
@@ -107,6 +107,7 @@ export default function TreeJourney({ d, a, open }: { d: PortfolioData; a: Autho
         <p className="font-mono text-[11px] uppercase tracking-widest text-vino [text-shadow:0_0_10px_#fff,0_0_4px_#fff]">Desciende por el tronco ↓</p>
       </div>
 
+      {!reduced && <div aria-hidden className="night-veil pointer-events-none absolute inset-0 z-[6]" />}
       <FallingLeaves />
 
       {/* PARADAS DE LAS RAMAS (tarjeta + vista previa; posicionadas en BranchStop) */}

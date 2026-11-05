@@ -2,45 +2,44 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
-import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { Author, Colophon as ColType, Project } from "@/types/portfolio";
 import { ease, pad, Reveal, Words } from "./kit";
+import SeedTree from "./SeedTree";
+import Mail from "./Mail";
 
 export function Fin({ a, c }: { a: Author; c: ColType }) {
   const ref = useRef<HTMLElement>(null);
-  const { scrollYProgress: p } = useScroll({ target: ref, offset: ["start end", "end end"] });
-  const x = useTransform(p, [0, 1], ["25%", "-12%"]);
-  const rot = useTransform(p, [0, 1], [-10, 4]);
   const col = "space-y-2 font-mono text-[11px] leading-relaxed text-white/60";
-  const h = "mb-2 block font-bold uppercase tracking-widest text-white";
+  const h = "mb-2 block uppercase tracking-widest text-white";
   return (
-    <section ref={ref} id="fin" data-step="Y fin" className="overflow-hidden bg-vino text-white">
+    <section ref={ref} id="contacto" data-step="Dejar una semilla" className="overflow-hidden bg-vino text-white">
       <div className="grid gap-12 px-6 pb-20 pt-28 sm:px-12 sm:pt-40 lg:grid-cols-2">
         <div className="space-y-8">
-          <p className="font-mono text-[11px] uppercase tracking-[.25em] text-[#E8B8C8]">Y fin • Colofón & Agradecimientos</p>
-          <h2 className="font-serif text-4xl italic leading-[1.05] sm:text-6xl">
+          <p className="font-mono text-[11px] uppercase tracking-[.25em] text-[#E8B8C8]">Árbol del agradecimiento</p>
+          <p className="font-sans text-[10.5vw] uppercase leading-[.95] sm:text-7xl">
+            Construyamos juntos,<br />
+            <span className="text-[#E8B8C8]">deja tu semilla</span>
+          </p>
+          <h2 className="font-serif text-2xl leading-[1.2] text-white/85 sm:text-3xl">
             <Words t={`«${a.closingDedication}»`} />
           </h2>
           <Reveal d={0.2} className="font-mono text-[11px] uppercase tracking-widest text-[#E8B8C8]">ANASTOMOSIS • {a.name}</Reveal>
-        </div>
-        <Reveal className="relative mx-auto w-full max-w-md">
-          <motion.div style={{ rotate: rot }} className="relative aspect-[4/5] border-2 border-paper bg-white p-3">
-            <div className="relative h-full w-full">
-              <Image src="/images/outro-tree.webp" alt="Árbol de Conacaste" fill sizes="448px" className="object-contain" />
-            </div>
-            <div className="absolute -bottom-6 -right-4 rotate-6 bg-olive px-5 py-3 font-hand text-3xl leading-none text-white shadow-xl">
+          <Reveal d={0.3}>
+            <div className="inline-block -rotate-3 bg-olive px-6 py-4 font-hand text-4xl leading-none text-white shadow-xl">
               att:<br />
-              <b className="font-sans text-xl font-black uppercase">{a.name}</b>
+              <span className="font-sans text-xl uppercase">{a.name}</span>
             </div>
-          </motion.div>
+          </Reveal>
+        </div>
+        <Reveal className="relative w-full">
+          <SeedTree />
         </Reveal>
       </div>
 
-      <motion.p style={{ x }} className="whitespace-nowrap font-sans text-[26vw] font-black uppercase leading-[.8] tracking-tighter stroke-t">
-        Anastomosis :)
-      </motion.p>
+      <Mail />
 
-      <footer className="mt-16 space-y-12 border-t border-white/15 px-6 pb-28 pt-12 sm:px-12">
+      <footer className="space-y-12 border-t border-white/15 px-6 pb-28 pt-12 sm:px-12">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className={col}>
             <b className={h}>Edición & Título</b>
@@ -93,7 +92,7 @@ export function Reader({ p, close }: { p: Project | null; close: () => void }) {
     };
   }, [p, close]);
 
-  const lb = "mb-2 block font-mono text-[11px] font-bold uppercase tracking-widest text-muted";
+  const lb = "mb-2 block font-mono text-[11px] uppercase tracking-widest text-muted";
   return (
     <AnimatePresence>
       {p && (
@@ -117,8 +116,8 @@ export function Reader({ p, close }: { p: Project | null; close: () => void }) {
 
             <motion.div {...it(1)} className="space-y-2">
               <span className={lb}>{p.category}</span>
-              <h2 className="font-sans text-4xl font-black uppercase leading-[.92] tracking-tighter sm:text-6xl">{p.title}</h2>
-              {p.subtitle && <p className="font-serif text-2xl italic text-vino">{p.subtitle}</p>}
+              <h2 className="font-sans text-4xl uppercase leading-[.92] tracking-tighter sm:text-6xl">{p.title}</h2>
+              {p.subtitle && <p className="font-serif text-2xl text-vino">{p.subtitle}</p>}
             </motion.div>
 
             <motion.div {...it(2)} className="relative aspect-[4/3] border border-ink bg-white p-4 shadow-[8px_8px_0_#231F20]">
@@ -127,7 +126,7 @@ export function Reader({ p, close }: { p: Project | null; close: () => void }) {
               </div>
             </motion.div>
 
-            <motion.blockquote {...it(3)} className="border-l-4 border-vino bg-white p-5 font-serif text-xl italic leading-relaxed">«{p.summary}»</motion.blockquote>
+            <motion.blockquote {...it(3)} className="border-l-4 border-vino bg-white p-5 font-serif text-xl leading-relaxed">«{p.summary}»</motion.blockquote>
 
             <motion.div {...it(4)} className="space-y-4 font-serif text-xl leading-relaxed">
               <span className={lb}>Memoria Verbatim de la Obra</span>
@@ -155,7 +154,7 @@ export function Reader({ p, close }: { p: Project | null; close: () => void }) {
               {p.credits && (
                 <div>
                   <span className={lb}>Créditos & Acompañamiento</span>
-                  <p className="font-serif text-lg font-semibold leading-snug text-vino">{p.credits}</p>
+                  <p className="font-serif text-lg leading-snug text-vino">{p.credits}</p>
                 </div>
               )}
               <div>

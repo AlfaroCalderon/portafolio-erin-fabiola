@@ -41,13 +41,13 @@ function Row({ p, col, i, hov, setHov, open, pinned, pin, onDrag, onEnd }: { p: 
         >
           ⠿
         </button>
-        <span className="w-10 shrink-0 font-mono text-xs font-bold sm:w-14" style={{ color: pinned ? undefined : col }}>
+        <span className="w-10 shrink-0 font-mono text-xs sm:w-14" style={{ color: pinned ? undefined : col }}>
           P.{pad(p.pageStart)}
         </span>
-        <span className="min-w-0 flex-1 font-sans text-2xl font-extrabold uppercase leading-[.95] tracking-tighter transition-transform duration-500 ease-[cubic-bezier(.16,1,.3,1)] group-hover:translate-x-3 sm:text-4xl lg:text-6xl">
+        <span className="min-w-0 flex-1 font-sans text-2xl uppercase leading-[.95] tracking-tighter transition-transform duration-500 ease-[cubic-bezier(.16,1,.3,1)] group-hover:translate-x-3 sm:text-4xl lg:text-6xl">
           {p.title}
         </span>
-        <span className="hidden w-60 text-right font-serif text-lg italic leading-tight md:block">{p.category}</span>
+        <span className="hidden w-60 text-right font-serif text-lg leading-tight md:block">{p.category}</span>
         <button
           aria-pressed={pinned}
           aria-label={pinned ? "Soltar" : "Fijar"}
@@ -94,12 +94,12 @@ export function Index({ d, open }: { d: PortfolioData; open: Open }) {
       <div className="mb-16 flex flex-col justify-between gap-8 border-b border-ink pb-8 lg:flex-row lg:items-end">
         <div>
           <p className="mb-4 font-mono text-[11px] uppercase tracking-[.25em] text-vino">Directorio Editorial • {d.projects.length} Obras Registradas</p>
-          <h2 className="font-sans text-[19vw] font-black lowercase leading-[.75] tracking-tighter lg:text-[20vw]">
+          <h2 className="font-sans text-[19vw] lowercase leading-[.75] tracking-tighter lg:text-[20vw]">
             <Words t="index" />
           </h2>
         </div>
         <div className="space-y-4 font-mono text-[11px] uppercase tracking-widest">
-          <p className="max-w-xs leading-relaxed text-muted">Arrastra ⠿ para reordenar · ◇ para fijar · Ctrl Z lo deshace</p>
+          <p className="max-w-xs leading-relaxed text-muted">Arrastra ⠿ para reordenar · ◇ para fijar</p>
           <div className="flex gap-2">
             {[
               ["Barajar ⤮", () => commit({ order: [...s.order].sort(() => Math.random() - 0.5) }, "Barajó el índice")],
@@ -116,9 +116,9 @@ export function Index({ d, open }: { d: PortfolioData; open: Open }) {
       <div className="space-y-20">
         {cats.map(({ sec, ids }) => (
           <div key={sec.id}>
-            <h3 className="mb-2 flex items-baseline justify-between border-b-2 border-ink pb-2 font-sans text-2xl font-black uppercase tracking-tight sm:text-4xl">
+            <h3 className="mb-2 flex items-baseline justify-between border-b-2 border-ink pb-2 font-sans text-2xl uppercase tracking-tight sm:text-4xl">
               <span>
-                {sec.name} <span className="font-serif text-xl font-medium normal-case italic text-muted sm:text-3xl">({sec.translation})</span>
+                {sec.name} <span className="font-serif text-xl normal-case text-muted sm:text-3xl">({sec.translation})</span>
               </span>
               <span className="font-mono text-sm" style={{ color: sec.accentColor }}>{pad(ids.length)}</span>
             </h3>
@@ -187,7 +187,7 @@ const FOLIO: Record<string, string> = { radix: "08—17", truncus: "18—34", ra
 function MuroRow({ w, p, k }: { w: string[]; p: MotionValue<number>; k: number }) {
   const x = useTransform(p, [0, 1], k % 2 ? ["-35%", "0%"] : ["0%", "-35%"]);
   return (
-    <motion.p style={{ x }} className={`flex w-max gap-10 whitespace-nowrap font-sans font-black uppercase tracking-tighter ${k === 1 ? "text-[6vw]" : "stroke-t text-[16vw]"}`}>
+    <motion.p style={{ x }} className={`flex w-max gap-10 whitespace-nowrap font-sans uppercase tracking-tighter ${k === 1 ? "text-[6vw]" : "stroke-t text-[16vw]"}`}>
       {w.concat(w).map((t, i) => (
         <span key={i}>{t}</span>
       ))}
@@ -224,12 +224,12 @@ function Reel({ sec, ps, open }: { sec: PortfolioData["sections"][number]; ps: P
         <div className="relative z-10 mb-6 grid items-end gap-6 px-6 sm:px-12 lg:grid-cols-12">
           <div className="lg:col-span-7">
             <p className="font-mono text-[11px] uppercase tracking-widest text-muted">Folio {FOLIO[sec.id]} • {ps.length} proyectos</p>
-            <h2 className="font-sans text-[17vw] font-black uppercase leading-[.82] tracking-tighter lg:text-[11vw]" style={{ color: sec.accentColor }}>
+            <h2 className="font-sans text-[17vw] uppercase leading-[.82] tracking-tighter lg:text-[11vw]" style={{ color: sec.accentColor }}>
               <Words t={sec.name} />
             </h2>
           </div>
           <div className="lg:col-span-5">
-            <p className="font-serif text-2xl italic leading-none">{sec.translation}</p>
+            <p className="font-serif text-2xl leading-none">{sec.translation}</p>
             <p className="mt-2 max-w-md font-serif text-base leading-snug text-muted sm:text-lg">{sec.concept}</p>
             <p className="mt-2 font-mono text-[10px] uppercase tracking-widest">{sec.discipline}</p>
           </div>
@@ -253,11 +253,11 @@ function Reel({ sec, ps, open }: { sec: PortfolioData["sections"][number]; ps: P
                 <span className="absolute left-3 top-3 bg-ink px-2 py-0.5 font-mono text-[10px] text-paper">p.{pad(pr.pageStart)}</span>
               </div>
               <div className="space-y-1.5 p-4">
-                <div className="flex items-center justify-between font-mono text-xs font-bold" style={{ color: sec.accentColor }}>
+                <div className="flex items-center justify-between font-mono text-xs " style={{ color: sec.accentColor }}>
                   <span>№ {pr.number}</span>
                   <span className="transition-transform duration-500 group-hover:-translate-y-1 group-hover:translate-x-1">↗</span>
                 </div>
-                <h3 className="font-sans text-xl font-extrabold uppercase leading-[.95] tracking-tighter">{pr.title}</h3>
+                <h3 className="font-sans text-xl uppercase leading-[.95] tracking-tighter">{pr.title}</h3>
                 <p className="line-clamp-2 font-serif text-base leading-snug text-muted">{pr.summary}</p>
                 <p className="flex justify-between border-t border-ink/15 pt-2 font-mono text-[10px] uppercase text-muted">
                   <span className="truncate">{pr.category}</span>

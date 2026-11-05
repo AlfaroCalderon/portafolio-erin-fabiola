@@ -41,12 +41,12 @@ export const Head = ({ k, t, r }: { k: string; t: string; r?: ReactNode }) => (
       <Reveal y={20}>
         <span className="mb-4 block font-mono text-[11px] uppercase tracking-[.25em] text-vino">{k}</span>
       </Reveal>
-      <h2 className="font-sans text-5xl font-black uppercase leading-[.88] tracking-tighter sm:text-7xl lg:text-8xl">
+      <h2 className="font-sans text-5xl uppercase leading-[.88] tracking-tighter sm:text-7xl lg:text-8xl">
         <Words t={t} />
       </h2>
     </div>
     {r && (
-      <Reveal d={0.15} className="max-w-md font-serif text-lg font-medium italic leading-snug text-muted sm:text-xl">
+      <Reveal d={0.15} className="max-w-md font-serif text-lg leading-snug text-muted sm:text-xl">
         {r}
       </Reveal>
     )}

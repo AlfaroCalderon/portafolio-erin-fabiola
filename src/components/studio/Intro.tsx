@@ -13,7 +13,18 @@ const FULL = A + B;
 
 export function Typed({ replay }: { replay: number }) {
   const [n, setN] = useState(0);
+  const [ready, setReady] = useState(false);
   useEffect(() => {
+    const on = () => setReady(true);
+    window.addEventListener("welcome-done", on);
+    const t = setTimeout(() => !document.querySelector("[data-welcome]") && setReady(true), 400);
+    return () => {
+      window.removeEventListener("welcome-done", on);
+      clearTimeout(t);
+    };
+  }, []);
+  useEffect(() => {
+    if (!ready) return;
     let c = replay ? FULL.length : 0;
     let dir = replay ? -1 : 1;
     const id = setInterval(() => {
@@ -29,18 +40,18 @@ export function Typed({ replay }: { replay: number }) {
       setN(c);
     }, 42);
     return () => clearInterval(id);
-  }, [replay]);
+  }, [replay, ready]);
   const a = FULL.slice(0, Math.min(n, A.length));
   const b = FULL.slice(A.length, n);
   return (
     <>
       <span className="invisible" aria-label={FULL}>
         {A}
-        <span className="font-serif font-medium normal-case italic">{B}</span>
+        <span className="font-serif normal-case ">{B}</span>
       </span>
       <span aria-hidden className="absolute inset-0">
         {a}
-        <span className="font-serif font-medium normal-case italic text-vino">{b}</span>
+        <span className="font-serif normal-case text-vino">{b}</span>
         <span className="inline-block w-0 overflow-visible align-baseline"><span className="animate-caret absolute ml-1 h-[.75em] w-[.06em] -translate-y-[.78em] bg-vino" /></span>
       </span>
     </>
@@ -87,18 +98,18 @@ export function Hero({ a }: { a: Author }) {
             <Image src="/images/hero-tree.webp" alt="Árbol de Conacaste - Anastomosis" fill preload sizes="(max-width:768px) 44vw, 440px" className="object-contain" />
           </div>
         </div>
-        <figcaption className="mt-2 max-w-[90%] font-serif text-sm italic leading-snug">
+        <figcaption className="mt-2 max-w-[90%] font-serif text-sm leading-snug">
           <b className="mr-1 font-mono text-[10px] not-italic uppercase tracking-widest text-vino">Eduardo Galeano</b>«Al fin y al cabo, somos lo que hacemos para cambiar lo que somos.»
         </figcaption>
       </motion.figure>
 
-      <motion.h1 style={{ y: hy }} className="relative z-10 my-10 font-sans text-[12.5vw] font-black uppercase leading-[.86] tracking-tighter sm:text-[10.5vw]">
+      <motion.h1 style={{ y: hy }} className="relative z-10 my-10 font-sans text-[12.5vw] uppercase leading-[.86] tracking-tighter sm:text-[10.5vw]">
         <Typed replay={replay + loc} />
       </motion.h1>
 
       <motion.div style={{ opacity: op }} className="relative z-10 flex flex-wrap items-end justify-between gap-8">
         <motion.p initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ ease, duration: 1, delay: 1.2 }} className="max-w-sm font-serif text-xl leading-snug">
-          <b className="font-bold">{a.quote.text}</b>
+          <b className="">{a.quote.text}</b>
           <br />
           <em className="text-muted">— {a.quote.author}</em>
         </motion.p>
@@ -138,7 +149,7 @@ export function Marquee({ items }: { items: string[] }) {
       </div>
       <motion.div style={{ skewX: sk }} className="animate-marquee">
         {row.map((t, i) => (
-          <span key={i} className={`flex shrink-0 items-center gap-8 pr-8 font-sans text-5xl font-black uppercase tracking-tighter sm:text-7xl ${i % 2 ? "stroke-t" : ""}`}>
+          <span key={i} className={`flex shrink-0 items-center gap-8 pr-8 font-sans text-5xl uppercase tracking-tighter sm:text-7xl ${i % 2 ? "stroke-t" : ""}`}>
             {t}
             <span className="size-3 rounded-full bg-ochre" />
           </span>
@@ -159,10 +170,10 @@ export function Porta({ a }: { a: Author }) {
   return (
     <section ref={ref} id="porta" data-step="Entrar al portafolio" className="relative h-[240vh] bg-vino text-white">
       <div className="sticky top-0 flex h-screen flex-col items-center justify-center gap-6 overflow-hidden px-4 text-center">
-        <motion.p style={{ scale: sc, letterSpacing: ls, opacity: op }} className="font-sans text-[15.5vw] font-black uppercase leading-[.85]">
+        <motion.p style={{ scale: sc, letterSpacing: ls, opacity: op }} className="font-sans text-[15.5vw] uppercase leading-[.85]">
           {a.title}
         </motion.p>
-        <motion.p style={{ opacity: sub, y: suby }} className="font-serif text-3xl italic sm:text-6xl">
+        <motion.p style={{ opacity: sub, y: suby }} className="font-serif text-3xl sm:text-6xl">
           {a.subtitle}
         </motion.p>
         <motion.p style={{ opacity: sub }} className="font-mono text-[11px] uppercase tracking-[.3em]">
@@ -182,7 +193,7 @@ function Para({ t, i }: { t: string; i: number }) {
     <motion.p
       ref={r}
       style={{ opacity: o, y }}
-      className={i === 0 ? "font-serif text-3xl leading-[1.12] first-letter:float-left first-letter:mr-2 first-letter:font-sans first-letter:text-7xl first-letter:font-black first-letter:leading-[.8] first-letter:text-vino sm:text-5xl" : "font-serif text-xl leading-relaxed sm:text-2xl"}
+      className={i === 0 ? "font-serif text-3xl leading-[1.12] first-letter:float-left first-letter:mr-2 first-letter:font-sans first-letter:text-7xl first-letter:leading-[.8] first-letter:text-vino sm:text-5xl" : "font-serif text-xl leading-relaxed sm:text-2xl"}
     >
       {t}
     </motion.p>
@@ -204,7 +215,7 @@ export function Manifest({ a }: { a: Author }) {
           <Reveal y={20}>
             <p className="mb-6 font-mono text-[11px] uppercase tracking-[.25em] text-vino">08 — El Origen de Anastomosis • Texto Original Íntegro</p>
           </Reveal>
-          <h2 className="font-sans text-4xl font-black uppercase leading-[.92] tracking-tighter sm:text-6xl">
+          <h2 className="font-sans text-4xl uppercase leading-[.92] tracking-tighter sm:text-6xl">
             <Words t="«Mira sus ramas, se han fusionado y son una sola»" />
           </h2>
           <Reveal d={0.2} className="mt-10 max-w-sm">
@@ -212,7 +223,7 @@ export function Manifest({ a }: { a: Author }) {
               <div className="relative aspect-square bg-paper">
                 <Image src="/images/outro-tree.webp" alt="Árbol de Conacaste" fill sizes="384px" className="object-contain" />
               </div>
-              <p className="mt-4 font-serif text-lg italic leading-snug">{a.closingDedication}</p>
+              <p className="mt-4 font-serif text-lg leading-snug">{a.closingDedication}</p>
               <p className="mt-2 font-mono text-[10px] uppercase tracking-widest text-muted">{a.name}</p>
             </motion.div>
           </Reveal>
@@ -232,7 +243,7 @@ export function Manifest({ a }: { a: Author }) {
                 className="grid grid-cols-3 gap-4 border-b border-ink/20 py-3"
               >
                 <dt className="font-mono text-[11px] uppercase tracking-widest text-muted">{k}</dt>
-                <dd className="col-span-2 font-sans text-base font-semibold">{v}</dd>
+                <dd className="col-span-2 font-sans text-base ">{v}</dd>
               </motion.div>
             ))}
           </dl>
@@ -264,11 +275,11 @@ export function Stage({ d, open }: { d: PortfolioData; open: (p: Project) => voi
             className="mt-8 grid items-center gap-8 lg:grid-cols-12"
           >
             <div className="lg:col-span-7">
-              <span className="font-sans text-8xl font-black leading-none tracking-tighter sm:text-[12vw]" style={{ color: sec.accentColor }}>
+              <span className="font-sans text-8xl leading-none tracking-tighter sm:text-[12vw]" style={{ color: sec.accentColor }}>
                 {cur.number}
               </span>
-              <p className="mt-4 font-serif text-2xl italic leading-snug sm:text-4xl">«{cur.summary}»</p>
-              <button onClick={() => open(cur)} className="group mt-8 inline-flex cursor-pointer items-center gap-3 font-sans text-xl font-extrabold uppercase tracking-tight sm:text-3xl">
+              <p className="mt-4 font-serif text-2xl leading-snug sm:text-4xl">«{cur.summary}»</p>
+              <button onClick={() => open(cur)} className="group mt-8 inline-flex cursor-pointer items-center gap-3 font-sans text-xl uppercase tracking-tight sm:text-3xl">
                 <span className="border-b-2 border-ink transition-colors group-hover:text-vino">{cur.title}</span>
                 <span className="transition-transform duration-500 group-hover:translate-x-2 group-hover:-translate-y-1">↗</span>
               </button>
