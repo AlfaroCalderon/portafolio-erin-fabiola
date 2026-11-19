@@ -115,7 +115,7 @@ export function CV({ d, open }: { d: PortfolioData; open: (p: Project) => void }
                   <p className="mt-2 font-serif text-xl ">{a.role}</p>
                   <p className="font-mono text-[10px] uppercase tracking-widest text-muted">{a.location} • {a.institution} • {a.edition}</p>
                 </div>
-                <a href="mailto:erin.figueroa@ujmd.edu.sv" className="font-mono text-xs text-vino underline underline-offset-4">erin.figueroa@ujmd.edu.sv</a>
+                <a href="mailto:afigueroa.erin@gmail.com" className="font-mono text-xs text-vino underline underline-offset-4">afigueroa.erin@gmail.com</a>
               </Layer>
 
               <Layer name="01 Experiencia Laboral" set={setSel}>

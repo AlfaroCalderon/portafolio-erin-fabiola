@@ -21,7 +21,14 @@ export default function Petals() {
       el.height = window.innerHeight * d;
       g.setTransform(d, 0, 0, d, 0, 0);
     };
+    const isNight = () => document.documentElement.classList.contains("night");
     const move = (e: PointerEvent) => {
+      if (isNight()) {
+        acc = 0;
+        lx = e.clientX;
+        ly = e.clientY;
+        return;
+      }
       if (lx >= 0) acc += Math.hypot(e.clientX - lx, e.clientY - ly);
       lx = e.clientX;
       ly = e.clientY;

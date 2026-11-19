@@ -1,6 +1,7 @@
 "use client";
 
 import { CSSProperties, RefObject, useEffect, useMemo, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import Image from "next/image";
 import { AnimatePresence, MotionValue, Reorder, motion, useDragControls, useScroll, useSpring, useTransform } from "framer-motion";
 import { PortfolioData, Project } from "@/types/portfolio";
@@ -9,7 +10,7 @@ import { ease, pad, vp, Words } from "./kit";
 
 type Open = (p: Project) => void;
 
-function Row({ p, col, i, hov, setHov, open, pinned, pin, onDrag, onEnd }: { p: Project; col: string; i: number; hov: string | null; setHov: (v: string | null) => void; open: Open; pinned: boolean; pin: () => void; onDrag: () => void; onEnd: () => void }) {
+function Row({ p, col, i, hov, setHov, open, pinned, pin, onDrag, onEnd }: { p: Project; col: string; i: number; hov: string | null; setHov: (v: string | null, e?: React.MouseEvent) => void; open: Open; pinned: boolean; pin: () => void; onDrag: () => void; onEnd: () => void }) {
   const dc = useDragControls();
   return (
     <Reorder.Item
@@ -20,7 +21,7 @@ function Row({ p, col, i, hov, setHov, open, pinned, pin, onDrag, onEnd }: { p: 
       whileDrag={{ scale: 1.02, zIndex: 5, backgroundColor: "#fff", boxShadow: "0 24px 60px rgba(35,31,32,.2)" }}
       onDragStart={onDrag}
       onDragEnd={onEnd}
-      onMouseEnter={() => setHov(p.id)}
+      onMouseEnter={(e) => setHov(p.id, e)}
       onMouseLeave={() => setHov(null)}
       className="relative list-none"
     >
@@ -68,12 +69,41 @@ function Row({ p, col, i, hov, setHov, open, pinned, pin, onDrag, onEnd }: { p: 
 export function Index({ d, open }: { d: PortfolioData; open: Open }) {
   const { s, commit, mx, my } = useStudio();
   const by = useMemo(() => Object.fromEntries(d.projects.map((p) => [p.id, p])), [d]);
-  const [hov, setHov] = useState<string | null>(null);
+  const [hov, setHovRaw] = useState<string | null>(null);
+  const hovRef = useRef<string | null>(null);
   const [drag, setDrag] = useState(false);
   const [live, setLive] = useState<{ sec: string; ids: string[] } | null>(null);
   const sx = useSpring(mx, { stiffness: 260, damping: 26, mass: 0.4 });
   const sy = useSpring(my, { stiffness: 260, damping: 26, mass: 0.4 });
   const rot = useTransform(() => Math.max(-14, Math.min(14, (mx.get() - sx.get()) * 0.15)));
+  const setHov = (v: string | null, e?: React.MouseEvent) => {
+    if (v && v !== hovRef.current && e) {
+      sx.jump(e.clientX);
+      sy.jump(e.clientY);
+    }
+    hovRef.current = v;
+    setHovRaw(v);
+  };
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    const t = setTimeout(() => setMounted(true), 0);
+    return () => clearTimeout(t);
+  }, []);
+  useEffect(() => {
+    const snap = () => {
+      sx.jump(mx.get());
+      sy.jump(my.get());
+    };
+    snap();
+    const follow = () => {
+      if (!hov) snap();
+    };
+    const a = mx.on("change", follow), b = my.on("change", follow);
+    return () => {
+      a();
+      b();
+    };
+  }, [hov, mx, my, sx, sy]);
   const cats = d.sections.map((sec) => ({ sec, ids: s.order.filter((id) => by[id].section === sec.id) }));
   const hp = hov && !drag ? by[hov] : null;
   const hs = hp ? d.sections.find((x) => x.id === hp.section) : null;
@@ -144,7 +174,8 @@ export function Index({ d, open }: { d: PortfolioData; open: Open }) {
         ))}
       </div>
 
-      <motion.div style={{ x: sx, y: sy }} className="pointer-events-none fixed left-0 top-0 z-[55] hidden lg:block">
+      {mounted && createPortal(
+        <motion.div style={{ x: sx, y: sy }} className="pointer-events-none fixed left-0 top-0 z-[55] hidden lg:block">
         <AnimatePresence>
           {hp && hs && (
             <motion.div
@@ -172,7 +203,9 @@ export function Index({ d, open }: { d: PortfolioData; open: Open }) {
             </motion.div>
           )}
         </AnimatePresence>
-      </motion.div>
+      </motion.div>,
+        document.body
+      )}
     </section>
   );
 }

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const TO = "erin.figueroa@ujmd.edu.sv";
+const TO = "afigueroa.erin@gmail.com";
 const KEY = "anastomosis:semillas";
 
 export function mailLink(f: { name: string; from: string; msg: string; seeds: boolean }, saved: string | null) {

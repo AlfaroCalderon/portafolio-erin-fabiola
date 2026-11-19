@@ -46,7 +46,7 @@ function build(w: number, h: number): Seed[] {
   return out;
 }
 
-const hot = (p: { x: number; y: number } | null, x: number, y: number) => !!p && Math.hypot(p.x - x, p.y - y) < 16;
+const hot = (p: { x: number; y: number } | null, x: number, y: number) => !!p && Math.hypot(p.x - x, p.y - y) < 26;
 
 function drawFlower(g: CanvasRenderingContext2D, k: number) {
   g.scale(k, k);
@@ -167,7 +167,7 @@ export default function SeedTree() {
           g.save();
           g.translate(x, y);
           g.scale(grow, grow);
-          drawFlower(g, hot(s.ptr, x, y) ? 1.3 : 1);
+          drawFlower(g, hot(s.ptr, x, y) ? 2.9 : 2.4);
           g.restore();
           continue;
         }
@@ -226,7 +226,7 @@ export default function SeedTree() {
   const look = (e: React.PointerEvent) => {
     const r = cv.current!.getBoundingClientRect(), s = st.current;
     s.ptr = { x: e.clientX - r.left, y: e.clientY - r.top };
-    const q = s.seeds.find((q) => q.mine && q.rec && Math.hypot(q.x - s.ptr!.x, q.y - s.ptr!.y) < 14);
+    const q = s.seeds.find((q) => q.mine && q.rec && Math.hypot(q.x - s.ptr!.x, q.y - s.ptr!.y) < 24);
     setTip(q?.rec ? { x: q.x, y: q.y, name: q.rec.name ?? "", msg: q.rec.msg ?? "" } : null);
   };
 
@@ -249,7 +249,7 @@ export default function SeedTree() {
           className="aspect-[4/5] w-full touch-manipulation"
         />
         {tip && (
-          <div style={{ left: tip.x, top: tip.y }} className="pointer-events-none absolute z-10 w-52 -translate-x-1/2 -translate-y-[calc(100%+14px)] bg-white p-3 text-ink shadow-xl">
+          <div style={{ left: tip.x, top: tip.y }} className="pointer-events-none absolute z-10 w-52 -translate-x-1/2 -translate-y-[calc(100%+30px)] bg-white p-3 text-ink shadow-xl">
             <p className="font-mono text-[10px] uppercase tracking-widest text-vino">Una flor del árbol</p>
             <p className="mt-1 font-serif text-lg leading-tight">{tip.msg || "Una semilla en silencio"}</p>
             <p className="mt-1 font-mono text-[10px] uppercase tracking-widest text-muted">{tip.name ? `— ${tip.name}` : "— anónimo"}</p>

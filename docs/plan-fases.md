@@ -33,4 +33,10 @@ Cada fase se entrega y se revisa antes de empezar la siguiente.
 - Semillas: siempre una flor (se descartó la idea de que crecieran por etapas). Nombre y frase opcionales; al pasar el puntero sobre una flor aparece su cartel.
 - Rastro de pétalos al mover el puntero (solo con mouse).
 - Modo noche con luciérnagas: botón de luna abajo a la izquierda, se recuerda la elección.
-- Sección "Escríbeme" (¿Hablamos?) en el cierre, con banda rosa clara y carta inclinada para distinguirse: abre el correo del visitante con el mensaje para erin.figueroa@ujmd.edu.sv, y opcionalmente cuántas semillas dejó.
+- Sección "Escríbeme" (¿Hablamos?) en el cierre, con banda rosa clara y carta inclinada para distinguirse: abre el correo del visitante con el mensaje para afigueroa.erin@gmail.com, y opcionalmente cuántas semillas dejó.
+
+## Ajustes posteriores
+- Correo de contacto: afigueroa.erin@gmail.com, tanto en ¿Hablamos? como en el CV.
+- Índice: el mockup de la obra aparece directo bajo el puntero (antes salía desde abajo).
+- Pétalos: solo de día. De noche el puntero no los suelta, porque lo siguen las luciérnagas.
+- Flores de los mensajes en el árbol: más grandes (2.4×, 2.9× al pasar el puntero).
